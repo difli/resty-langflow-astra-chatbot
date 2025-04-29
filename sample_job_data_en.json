@@ -1,0 +1,93 @@
+[
+  {
+    "job_id": "RW_JOB_PIZZA_RM_01_EN",
+    "title": "Expert Pizza Chef",
+    "company": "Trattoria Bella Napoli",
+    "location_city": "Rome",
+    "location_region": "Lazio",
+    "location_address": "Via Nazionale 100",
+    "salary_description": "€1900 - €2300 Net Monthly",
+    "salary_min_monthly_net": 1900,
+    "salary_max_monthly_net": 2300,
+    "hours_description": "Evening shifts (6 PM - 12 AM), Tuesday-Sunday",
+    "contract_type": "Permanent",
+    "responsibilities": "Complete management of the pizzeria section: preparing dough according to traditional recipes, hand-stretching, topping, wood-fired oven cooking, cleaning and equipment maintenance.",
+    "experience_required": "Minimum 4 years proven experience as a pizza chef, preferably with a wood-fired oven. Autonomy and speed required.",
+    "benefits": ["Staff meals"],
+    "full_details_for_prompt": "Job Opening: Expert Pizza Chef in Rome (Lazio) at Trattoria Bella Napoli. Requires at least 4 years experience with wood-fired ovens. Full management of the pizza section, including dough, stretching, cooking. Permanent contract, evening shifts 6 PM-12 AM Tue-Sun. Net monthly salary €1900-€2300. Benefit: Staff meals.",
+    "pre_assessment_questions": [
+      "Do you have specific experience working with wood-fired pizza ovens?",
+      "Are you comfortable managing the entire pizza-making process independently, including dough preparation?",
+      "Are you available to work the required evening shifts (6 PM - 12 AM) from Tuesday to Sunday?"
+    ]
+  },
+  {
+    "job_id": "RW_JOB_WAITER_MI_05_EN",
+    "title": "Waiter/Waitress",
+    "company": "Ristorante Centrale Milano",
+    "location_city": "Milan",
+    "location_region": "Lombardy",
+    "location_address": "Corso Vittorio Emanuele 10",
+    "salary_description": "€1650 Net Monthly + Tips",
+    "salary_min_monthly_net": 1650,
+    "salary_max_monthly_net": null,
+    "hours_description": "Full-time (40 hours), lunch and dinner shifts, weekend and holiday availability required.",
+    "contract_type": "Fixed-Term (12 months)",
+    "responsibilities": "Welcoming and managing customers, presenting menus and wines, taking orders (including handheld devices), table service, clearing and resetting tables, managing payments.",
+    "experience_required": "Minimum 1 year experience in a similar role in quality restaurants. Excellent Italian and good English required. Customer service oriented.",
+    "benefits": ["Training", "Meal Vouchers"],
+    "full_details_for_prompt": "Position Available: Waiter/Waitress at Ristorante Centrale in Milan (Lombardy). 12-month fixed-term contract, full-time 40 hours/week on lunch/dinner shifts, including weekends and holidays. Salary €1650 net monthly plus tips. Duties: welcoming guests, taking orders, service, cashier. Requires at least 1 year experience, good English. Benefits: Training, Meal Vouchers.",
+    "pre_assessment_questions": [
+      "Do you have experience using handheld devices or POS systems for order taking?",
+      "Are you available to work full-time, including lunch/dinner shifts, weekends, and holidays as required?",
+      "Do you consider your English language skills to be good enough for serving international customers?",
+      "Are you comfortable working in a fast-paced restaurant environment?"
+    ]
+  },
+  {
+    "job_id": "RW_JOB_CHEF_FI_02_EN",
+    "title": "Chef de Partie (Pasta Station)",
+    "company": "Osteria Toscana",
+    "location_city": "Florence",
+    "location_region": "Tuscany",
+    "location_address": "Via Ghibellina 50",
+    "salary_description": "€2000 - €2400 Net Monthly (based on experience)",
+    "salary_min_monthly_net": 2000,
+    "salary_max_monthly_net": 2400,
+    "hours_description": "Full-time, 5 days/week (rotating days off), single or split shifts.",
+    "contract_type": "Permanent",
+    "responsibilities": "Responsible for the pasta station: preparing the line, cooking fresh pasta and risotto, managing ingredients and stock, adhering to HACCP standards.",
+    "experience_required": "At least 3 years experience as a Chef de Partie (pasta). Culinary diploma preferred. Knowledge of Tuscan cuisine.",
+    "benefits": ["Growth opportunities"],
+    "full_details_for_prompt": "Osteria Toscana in Florence seeks a Chef de Partie for the pasta station. Permanent contract, full-time 5 days/week. Net monthly salary €2000-€2400 depending on experience. Responsibilities: pasta line preparation, cooking pasta/risotto to order, stock management, HACCP compliance. Requires at least 3 years experience in the role and knowledge of Tuscan cuisine.",
+    "pre_assessment_questions": [
+      "Do you have at least 3 years of experience specifically managing a pasta station?",
+      "Are you knowledgeable about preparing both fresh pasta and risotto dishes?",
+      "Are you familiar with and committed to following HACCP standards in the kitchen?",
+      "Are you willing to work rotating days off, including potential split shifts?"
+    ]
+  },
+  {
+    "job_id": "RW_JOB_BAR_VE_07_EN",
+    "title": "Barista / Bartender",
+    "company": "Hotel Excelsior Venice",
+    "location_city": "Venice",
+    "location_region": "Veneto",
+    "location_address": "Lido di Venezia",
+    "salary_description": "CCNL Tourism Contract - Level to be defined",
+    "salary_min_monthly_net": null,
+    "salary_max_monthly_net": null,
+    "hours_description": "Seasonal April-October, full-time, shifts including nights.",
+    "contract_type": "Seasonal",
+    "responsibilities": "Preparing coffee drinks, aperitifs, international cocktails, managing the bar counter and table service, inventory.",
+    "experience_required": "Previous experience as Barista/Bartender in hotels or high-level bars. English proficiency essential, second language appreciated. HACCP certification.",
+    "benefits": ["Meals", "Accommodation (if needed)"],
+    "full_details_for_prompt": "Barista / Bartender needed for Hotel Excelsior in Venice Lido for the April-October season. Seasonal full-time contract (CCNL Turismo), level based on experience. Shift work, including nights. Duties: coffee, aperitifs, cocktails, bar/table service. Requires previous experience, excellent English, HACCP. Meals and accommodation potentially provided.",
+    "pre_assessment_questions": [
+      "Are you proficient in making a wide range of coffee drinks and international cocktails?",
+      "Are you available to work the full season from April to October, including night shifts?",
+      "Is your English proficiency sufficient for interacting with international hotel guests?",
+      "Do you currently hold a valid HACCP certification?"
+    ]
+  }
+] 

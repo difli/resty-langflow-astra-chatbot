@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE / Editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Distribution / Build artifacts
+.eggs/
+*.egg-info/
+dist/
+build/
+develop-eggs/
+*.egg
+MANIFEST
+
+# Logs and databases (if stored locally, though state is in Astra)
+*.log
+*.db
+*.sqlite3
+
+# Environment variables file (NEVER commit secrets)
+.env
+
+# --- Allow specific files/dirs needed for the project ---
+
+# Allow everything by default then ignore everything else
+# This requires explicitly un-ignoring desired files/dirs below.
+# If you prefer an "ignore specific" approach, remove this block and list ignores.
+*.*
+*
+
+# Keep this .gitignore file
+!.gitignore
+
+# Keep the main application files
+!README.md
+!resty_chat_app.py
+!sample_job_data_en.json
+!requirements.txt
+
+# Keep the example environment file
+!.env.example
+
+# Keep assets directory and its contents
+!assets/
+!assets/**
+
+# Keep langflow export directory and its contents
+!langflow_export/
+!langflow_export/**
+
+# Keep langflow components directory and its contents
+!langflow_components/
+!langflow_components/**
