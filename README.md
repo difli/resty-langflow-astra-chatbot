@@ -79,7 +79,7 @@ cd resty-langflow-astra-chatbot
 
 *   Log in to your [DataStax Astra](https://astra.datastax.com/) account.
 *   Create a new **Serverless Database**.
-*   Note down your **Database ID** (used as the API Endpoint) and select/create a **Keyspace Name** (e.g., `default_keyspace`).
+*   Note down your **Database API Endpoint** and select/create a **Keyspace Name** (e.g., `default_keyspace`).
 *   Generate an **Application Token** with appropriate permissions (e.g., "Database Administrator" or custom roles allowing read/write to collections). Note the Token value (it starts with `AstraCS:...`).
 *   You do *not* need to manually create the state collection (e.g., `assessment_state`); the state manager tool will create it on first use if it doesn't exist.
 
@@ -93,31 +93,23 @@ cd resty-langflow-astra-chatbot
 ASTRA_DB_APPLICATION_TOKEN="AstraCS:..."
 ASTRA_DB_API_ENDPOINT="YOUR_DATABASE_ID_OR_API_ENDPOINT" # e.g., a8e9a7e...
 OPENAI_API_KEY="sk-..."
-# Optional: Override defaults from astra_assessment_state_manager_tool.py
-# ASTRA_DB_KEYSPACE="your_keyspace"
-# ASTRA_DB_COLLECTION_NAME="your_state_collection"
+ASTRA_DB_COLLECTION_NAME="your_state_collection"
 ```
 
 **5. Langflow Setup (Docker Recommended):**
 
 *   **Run Langflow:** Use Docker Compose for ease. Refer to the [Langflow Documentation](https://docs.langflow.org/getting-started/docker) for setup guides.
-*   **Mount Custom Component:** Crucially, you need to make the `astra_assessment_state_manager_tool.py` available to Langflow. Modify your Docker run command or `docker-compose.yml` to mount the `langflow_components` directory into the container path Langflow uses for custom components (check Langflow docs for the exact path, often `/app/langflow/custom_components` or similar, or use the `LANGFLOW_COMPONENTS_PATH` environment variable).
+*   **Custom Component Handling:** The code for the custom `AstraDBAssessmentStateManagerTool` (`langflow_components/helpers/astra_assessment_state_manager_tool.py`) is included in this repository for reference and development. When you import the flow (`langflow_export/resty job assessment.json`) into Langflow, the Python code for this component is embedded within the flow's JSON definition. Therefore, you **do not** typically need to manually mount this file into the Docker container for the *imported flow to work*. Mounting is primarily useful if you are actively developing the component and want Langflow to pick up changes without re-importing the flow.
     ```yaml
-    # Example docker-compose.yml service definition
-    services:
-      langflow:
-        # ... other config (image, ports, etc.) ...
-        volumes:
-          # Mounts the local components dir into the container
-          - ./langflow_components:/app/langflow/custom_components # ADJUST TARGET PATH AS NEEDED
-        environment:
-          # Load variables from the .env file
-          - ASTRA_DB_APPLICATION_TOKEN=${ASTRA_DB_APPLICATION_TOKEN}
-          - ASTRA_DB_API_ENDPOINT=${ASTRA_DB_API_ENDPOINT}
-          - OPENAI_API_KEY=${OPENAI_API_KEY}
-          # Optional: Specify components path if image supports it
-          # - LANGFLOW_COMPONENTS_PATH=/app/langflow/custom_components
-        # Use env_file: ['.env'] instead of individual vars if preferred
+    # Example docker-compose.yml service definition for DEVELOPMENT (if modifying the component)
+    # services:
+    #   langflow:
+    #     # ... other config ...
+    #     volumes:
+    #       # Mounts the local components dir into the container to override embedded code
+    #       - ./langflow_components:/app/langflow/custom_components # ADJUST TARGET PATH AS NEEDED
+    #     environment:
+    #       # ... env vars for credentials ...
     ```
 *   **Install Dependencies:** Ensure `astrapy` is installed *within* the Langflow Docker container environment (e.g., by customizing the Dockerfile or exec-ing into the running container and running `pip install astrapy`).
 *   **Access Langflow:** Open your browser to `http://localhost:7860` (or the configured port).
@@ -134,12 +126,7 @@ OPENAI_API_KEY="sk-..."
 
 **7. Setup Streamlit App:**
 
-*   Create/activate a Python virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate # Linux/macOS OR venv\Scripts\activate # Windows
-    ```
-*   Install dependencies:
+*   **Install dependencies:** Ensure you have Python 3.9+ installed locally (Python 3.12.9 used during development). Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```

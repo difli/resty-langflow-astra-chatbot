@@ -1,0 +1,2697 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Agent",
+            "id": "Agent-LlRiY",
+            "name": "response",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "ChatOutput-s8lJv",
+            "inputTypes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__Agent-LlRiY{œdataTypeœ:œAgentœ,œidœ:œAgent-LlRiYœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-s8lJv{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-s8lJvœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "Agent-LlRiY",
+        "sourceHandle": "{œdataTypeœ:œAgentœ,œidœ:œAgent-LlRiYœ,œnameœ:œresponseœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "ChatOutput-s8lJv",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-s8lJvœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "AstraDBToolComponent",
+            "id": "AstraDBToolComponent-Jknk8",
+            "name": "api_build_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-LlRiY",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__AstraDBToolComponent-Jknk8{œdataTypeœ:œAstraDBToolComponentœ,œidœ:œAstraDBToolComponent-Jknk8œ,œnameœ:œapi_build_toolœ,œoutput_typesœ:[œToolœ]}-Agent-LlRiY{œfieldNameœ:œtoolsœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "AstraDBToolComponent-Jknk8",
+        "sourceHandle": "{œdataTypeœ:œAstraDBToolComponentœ,œidœ:œAstraDBToolComponent-Jknk8œ,œnameœ:œapi_build_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-LlRiY",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Prompt",
+            "id": "Prompt-hmJTA",
+            "name": "prompt",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "system_prompt",
+            "id": "Agent-LlRiY",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Prompt-hmJTA{œdataTypeœ:œPromptœ,œidœ:œPrompt-hmJTAœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-Agent-LlRiY{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Prompt-hmJTA",
+        "sourceHandle": "{œdataTypeœ:œPromptœ,œidœ:œPrompt-hmJTAœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Agent-LlRiY",
+        "targetHandle": "{œfieldNameœ:œsystem_promptœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "Memory",
+            "id": "Memory-Nwp1N",
+            "name": "messages_text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "memory",
+            "id": "Prompt-hmJTA",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__Memory-Nwp1N{œdataTypeœ:œMemoryœ,œidœ:œMemory-Nwp1Nœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}-Prompt-hmJTA{œfieldNameœ:œmemoryœ,œidœ:œPrompt-hmJTAœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "Memory-Nwp1N",
+        "sourceHandle": "{œdataTypeœ:œMemoryœ,œidœ:œMemory-Nwp1Nœ,œnameœ:œmessages_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Prompt-hmJTA",
+        "targetHandle": "{œfieldNameœ:œmemoryœ,œidœ:œPrompt-hmJTAœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "ChatInput",
+            "id": "ChatInput-whxnQ",
+            "name": "message",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "Agent-LlRiY",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "xy-edge__ChatInput-whxnQ{œdataTypeœ:œChatInputœ,œidœ:œChatInput-whxnQœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-Agent-LlRiY{œfieldNameœ:œinput_valueœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "selected": false,
+        "source": "ChatInput-whxnQ",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-whxnQœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "Agent-LlRiY",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "AstraDBAssessmentStateManagerTool",
+            "id": "AstraDBAssessmentStateManagerTool-zioT6",
+            "name": "api_build_tool",
+            "output_types": [
+              "Tool"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "tools",
+            "id": "Agent-LlRiY",
+            "inputTypes": [
+              "Tool"
+            ],
+            "type": "other"
+          }
+        },
+        "id": "xy-edge__AstraDBAssessmentStateManagerTool-zioT6{œdataTypeœ:œAstraDBAssessmentStateManagerToolœ,œidœ:œAstraDBAssessmentStateManagerTool-zioT6œ,œnameœ:œapi_build_toolœ,œoutput_typesœ:[œToolœ]}-Agent-LlRiY{œfieldNameœ:œtoolsœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "AstraDBAssessmentStateManagerTool-zioT6",
+        "sourceHandle": "{œdataTypeœ:œAstraDBAssessmentStateManagerToolœ,œidœ:œAstraDBAssessmentStateManagerTool-zioT6œ,œnameœ:œapi_build_toolœ,œoutput_typesœ:[œToolœ]}",
+        "target": "Agent-LlRiY",
+        "targetHandle": "{œfieldNameœ:œtoolsœ,œidœ:œAgent-LlRiYœ,œinputTypesœ:[œToolœ],œtypeœ:œotherœ}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "ChatOutput-s8lJv",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Display a chat message in the Playground.",
+            "display_name": "Chat Output",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "data_template",
+              "background_color",
+              "chat_icon",
+              "text_color",
+              "clean_data"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "clean_data": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Basic Clean Data",
+                "dynamic": false,
+                "info": "Whether to clean the data",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "clean_data",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from collections.abc import Generator\nfrom typing import Any\n\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.inputs import BoolInput\nfrom langflow.inputs.inputs import HandleInput\nfrom langflow.io import DropdownInput, MessageTextInput, Output\nfrom langflow.schema.data import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.schema.properties import Source\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_AI,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatOutput(ChatComponent):\n    display_name = \"Chat Output\"\n    description = \"Display a chat message in the Playground.\"\n    icon = \"MessagesSquare\"\n    name = \"ChatOutput\"\n    minimized = True\n\n    inputs = [\n        HandleInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            info=\"Message to be passed as output.\",\n            input_types=[\"Data\", \"DataFrame\", \"Message\"],\n            required=True,\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_AI,\n            advanced=True,\n            info=\"Type of sender.\",\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_AI,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"data_template\",\n            display_name=\"Data Template\",\n            value=\"{text}\",\n            advanced=True,\n            info=\"Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.\",\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n        BoolInput(\n            name=\"clean_data\",\n            display_name=\"Basic Clean Data\",\n            value=True,\n            info=\"Whether to clean the data\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(\n            display_name=\"Message\",\n            name=\"message\",\n            method=\"message_response\",\n        ),\n    ]\n\n    def _build_source(self, id_: str | None, display_name: str | None, source: str | None) -> Source:\n        source_dict = {}\n        if id_:\n            source_dict[\"id\"] = id_\n        if display_name:\n            source_dict[\"display_name\"] = display_name\n        if source:\n            # Handle case where source is a ChatOpenAI object\n            if hasattr(source, \"model_name\"):\n                source_dict[\"source\"] = source.model_name\n            elif hasattr(source, \"model\"):\n                source_dict[\"source\"] = str(source.model)\n            else:\n                source_dict[\"source\"] = str(source)\n        return Source(**source_dict)\n\n    async def message_response(self) -> Message:\n        # First convert the input to string if needed\n        text = self.convert_to_string()\n        # Get source properties\n        source, icon, display_name, source_id = self.get_properties_from_source_component()\n        background_color = self.background_color\n        text_color = self.text_color\n        if self.chat_icon:\n            icon = self.chat_icon\n\n        # Create or use existing Message object\n        if isinstance(self.input_value, Message):\n            message = self.input_value\n            # Update message properties\n            message.text = text\n        else:\n            message = Message(text=text)\n\n        # Set message properties\n        message.sender = self.sender\n        message.sender_name = self.sender_name\n        message.session_id = self.session_id\n        message.flow_id = self.graph.flow_id if hasattr(self, \"graph\") else None\n        message.properties.source = self._build_source(source_id, display_name, source)\n        message.properties.icon = icon\n        message.properties.background_color = background_color\n        message.properties.text_color = text_color\n\n        # Store message if needed\n        if self.session_id and self.should_store_message:\n            stored_message = await self.send_message(message)\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n\n    def _validate_input(self) -> None:\n        \"\"\"Validate the input data and raise ValueError if invalid.\"\"\"\n        if self.input_value is None:\n            msg = \"Input data cannot be None\"\n            raise ValueError(msg)\n        if isinstance(self.input_value, list) and not all(\n            isinstance(item, Message | Data | DataFrame | str) for item in self.input_value\n        ):\n            invalid_types = [\n                type(item).__name__\n                for item in self.input_value\n                if not isinstance(item, Message | Data | DataFrame | str)\n            ]\n            msg = f\"Expected Data or DataFrame or Message or str, got {invalid_types}\"\n            raise TypeError(msg)\n        if not isinstance(\n            self.input_value,\n            Message | Data | DataFrame | str | list | Generator | type(None),\n        ):\n            type_name = type(self.input_value).__name__\n            msg = f\"Expected Data or DataFrame or Message or str, Generator or None, got {type_name}\"\n            raise TypeError(msg)\n\n    def _safe_convert(self, data: Any) -> str:\n        \"\"\"Safely convert input data to string.\"\"\"\n        try:\n            if isinstance(data, str):\n                return data\n            if isinstance(data, Message):\n                return data.get_text()\n            if isinstance(data, Data):\n                if data.get_text() is None:\n                    msg = \"Empty Data object\"\n                    raise ValueError(msg)\n                return data.get_text()\n            if isinstance(data, DataFrame):\n                if self.clean_data:\n                    # Remove empty rows\n                    data = data.dropna(how=\"all\")\n                    # Remove empty lines in each cell\n                    data = data.replace(r\"^\\s*$\", \"\", regex=True)\n                    # Replace multiple newlines with a single newline\n                    data = data.replace(r\"\\n+\", \"\\n\", regex=True)\n\n                # Replace pipe characters to avoid markdown table issues\n                processed_data = data.replace(r\"\\|\", r\"\\\\|\", regex=True)\n\n                processed_data = processed_data.map(\n                    lambda x: str(x).replace(\"\\n\", \"<br/>\") if isinstance(x, str) else x\n                )\n\n                return processed_data.to_markdown(index=False)\n            return str(data)\n        except (ValueError, TypeError, AttributeError) as e:\n            msg = f\"Error converting data: {e!s}\"\n            raise ValueError(msg) from e\n\n    def convert_to_string(self) -> str | Generator[Any, None, None]:\n        \"\"\"Convert input data to string with proper error handling.\"\"\"\n        self._validate_input()\n        if isinstance(self.input_value, list):\n            return \"\\n\".join([self._safe_convert(item) for item in self.input_value])\n        if isinstance(self.input_value, Generator):\n            return self.input_value\n        return self._safe_convert(self.input_value)\n"
+              },
+              "data_template": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Data Template",
+                "dynamic": false,
+                "info": "Template to convert Data to Text. If left empty, it will be dynamically set to the Data's text key.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "data_template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{text}"
+              },
+              "input_value": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Message to be passed as output.",
+                "input_types": [
+                  "Data",
+                  "DataFrame",
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "input_value",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "AI"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": false,
+          "type": "ChatOutput"
+        },
+        "dragging": false,
+        "id": "ChatOutput-s8lJv",
+        "measured": {
+          "height": 66,
+          "width": 192
+        },
+        "position": {
+          "x": 627.164806176202,
+          "y": 182.21588208670252
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Agent-LlRiY",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "category": "agents",
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Define the agent's instructions, then enter a task to complete using tools.",
+            "display_name": "Agent",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "agent_llm",
+              "max_tokens",
+              "model_kwargs",
+              "json_mode",
+              "model_name",
+              "openai_api_base",
+              "api_key",
+              "temperature",
+              "seed",
+              "max_retries",
+              "timeout",
+              "system_prompt",
+              "tools",
+              "input_value",
+              "handle_parsing_errors",
+              "verbose",
+              "max_iterations",
+              "agent_description",
+              "memory",
+              "sender",
+              "sender_name",
+              "n_messages",
+              "session_id",
+              "order",
+              "template",
+              "add_current_date_tool"
+            ],
+            "frozen": false,
+            "icon": "bot",
+            "key": "Agent",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Response",
+                "hidden": false,
+                "method": "message_response",
+                "name": "response",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "score": 1.1732828199964098e-19,
+            "template": {
+              "_type": "Component",
+              "add_current_date_tool": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Current Date",
+                "dynamic": false,
+                "info": "If true, will add a tool to the agent that returns the current date.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "add_current_date_tool",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "agent_description": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Agent Description [Deprecated]",
+                "dynamic": false,
+                "info": "The description of the agent. This is only used when in Tool Mode. Defaults to 'A helpful assistant with access to the following tools:' and tools are added dynamically. This feature is deprecated and will be removed in future versions.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "agent_description",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "A helpful assistant with access to the following tools:"
+              },
+              "agent_llm": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Model Provider",
+                "dynamic": false,
+                "info": "The provider of the language model that the agent will use to generate responses.",
+                "input_types": [],
+                "name": "agent_llm",
+                "options": [
+                  "Amazon Bedrock",
+                  "Anthropic",
+                  "Azure OpenAI",
+                  "Google Generative AI",
+                  "Groq",
+                  "NVIDIA",
+                  "OpenAI",
+                  "SambaNova",
+                  "Custom"
+                ],
+                "options_metadata": [
+                  {
+                    "icon": "Amazon"
+                  },
+                  {
+                    "icon": "Anthropic"
+                  },
+                  {
+                    "icon": "Azure"
+                  },
+                  {
+                    "icon": "GoogleGenerativeAI"
+                  },
+                  {
+                    "icon": "Groq"
+                  },
+                  {
+                    "icon": "NVIDIA"
+                  },
+                  {
+                    "icon": "OpenAI"
+                  },
+                  {
+                    "icon": "SambaNova"
+                  },
+                  {
+                    "icon": "brain"
+                  }
+                ],
+                "placeholder": "",
+                "real_time_refresh": true,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "OpenAI"
+              },
+              "api_key": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "OpenAI API Key",
+                "dynamic": false,
+                "info": "The OpenAI API Key to use for the OpenAI model.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "api_key",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langchain_core.tools import StructuredTool\n\nfrom langflow.base.agents.agent import LCToolsAgentComponent\nfrom langflow.base.agents.events import ExceptionWithMessageError\nfrom langflow.base.models.model_input_constants import (\n    ALL_PROVIDER_FIELDS,\n    MODEL_DYNAMIC_UPDATE_FIELDS,\n    MODEL_PROVIDERS_DICT,\n    MODELS_METADATA,\n)\nfrom langflow.base.models.model_utils import get_model_name\nfrom langflow.components.helpers import CurrentDateComponent\nfrom langflow.components.helpers.memory import MemoryComponent\nfrom langflow.components.langchain_utilities.tool_calling import ToolCallingAgentComponent\nfrom langflow.custom.utils import update_component_build_config\nfrom langflow.io import BoolInput, DropdownInput, MultilineInput, Output\nfrom langflow.logging import logger\nfrom langflow.schema.dotdict import dotdict\nfrom langflow.schema.message import Message\n\n\ndef set_advanced_true(component_input):\n    component_input.advanced = True\n    return component_input\n\n\nclass AgentComponent(ToolCallingAgentComponent):\n    display_name: str = \"Agent\"\n    description: str = \"Define the agent's instructions, then enter a task to complete using tools.\"\n    icon = \"bot\"\n    beta = False\n    name = \"Agent\"\n\n    memory_inputs = [set_advanced_true(component_input) for component_input in MemoryComponent().inputs]\n\n    inputs = [\n        DropdownInput(\n            name=\"agent_llm\",\n            display_name=\"Model Provider\",\n            info=\"The provider of the language model that the agent will use to generate responses.\",\n            options=[*sorted(MODEL_PROVIDERS_DICT.keys()), \"Custom\"],\n            value=\"OpenAI\",\n            real_time_refresh=True,\n            input_types=[],\n            options_metadata=[MODELS_METADATA[key] for key in sorted(MODELS_METADATA.keys())] + [{\"icon\": \"brain\"}],\n        ),\n        *MODEL_PROVIDERS_DICT[\"OpenAI\"][\"inputs\"],\n        MultilineInput(\n            name=\"system_prompt\",\n            display_name=\"Agent Instructions\",\n            info=\"System Prompt: Initial instructions and context provided to guide the agent's behavior.\",\n            value=\"You are a helpful assistant that can use tools to answer questions and perform tasks.\",\n            advanced=False,\n        ),\n        *LCToolsAgentComponent._base_inputs,\n        *memory_inputs,\n        BoolInput(\n            name=\"add_current_date_tool\",\n            display_name=\"Current Date\",\n            advanced=True,\n            info=\"If true, will add a tool to the agent that returns the current date.\",\n            value=True,\n        ),\n    ]\n    outputs = [Output(name=\"response\", display_name=\"Response\", method=\"message_response\")]\n\n    async def message_response(self) -> Message:\n        try:\n            # Get LLM model and validate\n            llm_model, display_name = self.get_llm()\n            if llm_model is None:\n                msg = \"No language model selected. Please choose a model to proceed.\"\n                raise ValueError(msg)\n            self.model_name = get_model_name(llm_model, display_name=display_name)\n\n            # Get memory data\n            self.chat_history = await self.get_memory_data()\n\n            # Add current date tool if enabled\n            if self.add_current_date_tool:\n                if not isinstance(self.tools, list):  # type: ignore[has-type]\n                    self.tools = []\n                current_date_tool = (await CurrentDateComponent(**self.get_base_args()).to_toolkit()).pop(0)\n                if not isinstance(current_date_tool, StructuredTool):\n                    msg = \"CurrentDateComponent must be converted to a StructuredTool\"\n                    raise TypeError(msg)\n                self.tools.append(current_date_tool)\n\n            # Validate tools\n            if not self.tools:\n                msg = \"Tools are required to run the agent. Please add at least one tool.\"\n                raise ValueError(msg)\n\n            # Set up and run agent\n            self.set(\n                llm=llm_model,\n                tools=self.tools,\n                chat_history=self.chat_history,\n                input_value=self.input_value,\n                system_prompt=self.system_prompt,\n            )\n            agent = self.create_agent_runnable()\n            return await self.run_agent(agent)\n\n        except (ValueError, TypeError, KeyError) as e:\n            logger.error(f\"{type(e).__name__}: {e!s}\")\n            raise\n        except ExceptionWithMessageError as e:\n            logger.error(f\"ExceptionWithMessageError occurred: {e}\")\n            raise\n        except Exception as e:\n            logger.error(f\"Unexpected error: {e!s}\")\n            raise\n\n    async def get_memory_data(self):\n        memory_kwargs = {\n            component_input.name: getattr(self, f\"{component_input.name}\") for component_input in self.memory_inputs\n        }\n        # filter out empty values\n        memory_kwargs = {k: v for k, v in memory_kwargs.items() if v}\n\n        return await MemoryComponent(**self.get_base_args()).set(**memory_kwargs).retrieve_messages()\n\n    def get_llm(self):\n        if not isinstance(self.agent_llm, str):\n            return self.agent_llm, None\n\n        try:\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if not provider_info:\n                msg = f\"Invalid model provider: {self.agent_llm}\"\n                raise ValueError(msg)\n\n            component_class = provider_info.get(\"component_class\")\n            display_name = component_class.display_name\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\", \"\")\n\n            return self._build_llm_model(component_class, inputs, prefix), display_name\n\n        except Exception as e:\n            logger.error(f\"Error building {self.agent_llm} language model: {e!s}\")\n            msg = f\"Failed to initialize language model: {e!s}\"\n            raise ValueError(msg) from e\n\n    def _build_llm_model(self, component, inputs, prefix=\"\"):\n        model_kwargs = {input_.name: getattr(self, f\"{prefix}{input_.name}\") for input_ in inputs}\n        return component.set(**model_kwargs).build_model()\n\n    def set_component_params(self, component):\n        provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n        if provider_info:\n            inputs = provider_info.get(\"inputs\")\n            prefix = provider_info.get(\"prefix\")\n            model_kwargs = {input_.name: getattr(self, f\"{prefix}{input_.name}\") for input_ in inputs}\n\n            return component.set(**model_kwargs)\n        return component\n\n    def delete_fields(self, build_config: dotdict, fields: dict | list[str]) -> None:\n        \"\"\"Delete specified fields from build_config.\"\"\"\n        for field in fields:\n            build_config.pop(field, None)\n\n    def update_input_types(self, build_config: dotdict) -> dotdict:\n        \"\"\"Update input types for all fields in build_config.\"\"\"\n        for key, value in build_config.items():\n            if isinstance(value, dict):\n                if value.get(\"input_types\") is None:\n                    build_config[key][\"input_types\"] = []\n            elif hasattr(value, \"input_types\") and value.input_types is None:\n                value.input_types = []\n        return build_config\n\n    async def update_build_config(\n        self, build_config: dotdict, field_value: str, field_name: str | None = None\n    ) -> dotdict:\n        # Iterate over all providers in the MODEL_PROVIDERS_DICT\n        # Existing logic for updating build_config\n        if field_name in (\"agent_llm\",):\n            build_config[\"agent_llm\"][\"value\"] = field_value\n            provider_info = MODEL_PROVIDERS_DICT.get(field_value)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call the component class's update_build_config method\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n\n            provider_configs: dict[str, tuple[dict, list[dict]]] = {\n                provider: (\n                    MODEL_PROVIDERS_DICT[provider][\"fields\"],\n                    [\n                        MODEL_PROVIDERS_DICT[other_provider][\"fields\"]\n                        for other_provider in MODEL_PROVIDERS_DICT\n                        if other_provider != provider\n                    ],\n                )\n                for provider in MODEL_PROVIDERS_DICT\n            }\n            if field_value in provider_configs:\n                fields_to_add, fields_to_delete = provider_configs[field_value]\n\n                # Delete fields from other providers\n                for fields in fields_to_delete:\n                    self.delete_fields(build_config, fields)\n\n                # Add provider-specific fields\n                if field_value == \"OpenAI\" and not any(field in build_config for field in fields_to_add):\n                    build_config.update(fields_to_add)\n                else:\n                    build_config.update(fields_to_add)\n                # Reset input types for agent_llm\n                build_config[\"agent_llm\"][\"input_types\"] = []\n            elif field_value == \"Custom\":\n                # Delete all provider fields\n                self.delete_fields(build_config, ALL_PROVIDER_FIELDS)\n                # Update with custom component\n                custom_component = DropdownInput(\n                    name=\"agent_llm\",\n                    display_name=\"Language Model\",\n                    options=[*sorted(MODEL_PROVIDERS_DICT.keys()), \"Custom\"],\n                    value=\"Custom\",\n                    real_time_refresh=True,\n                    input_types=[\"LanguageModel\"],\n                    options_metadata=[MODELS_METADATA[key] for key in sorted(MODELS_METADATA.keys())]\n                    + [{\"icon\": \"brain\"}],\n                )\n                build_config.update({\"agent_llm\": custom_component.to_dict()})\n            # Update input types for all fields\n            build_config = self.update_input_types(build_config)\n\n            # Validate required keys\n            default_keys = [\n                \"code\",\n                \"_type\",\n                \"agent_llm\",\n                \"tools\",\n                \"input_value\",\n                \"add_current_date_tool\",\n                \"system_prompt\",\n                \"agent_description\",\n                \"max_iterations\",\n                \"handle_parsing_errors\",\n                \"verbose\",\n            ]\n            missing_keys = [key for key in default_keys if key not in build_config]\n            if missing_keys:\n                msg = f\"Missing required keys in build_config: {missing_keys}\"\n                raise ValueError(msg)\n        if (\n            isinstance(self.agent_llm, str)\n            and self.agent_llm in MODEL_PROVIDERS_DICT\n            and field_name in MODEL_DYNAMIC_UPDATE_FIELDS\n        ):\n            provider_info = MODEL_PROVIDERS_DICT.get(self.agent_llm)\n            if provider_info:\n                component_class = provider_info.get(\"component_class\")\n                component_class = self.set_component_params(component_class)\n                prefix = provider_info.get(\"prefix\")\n                if component_class and hasattr(component_class, \"update_build_config\"):\n                    # Call each component class's update_build_config method\n                    # remove the prefix from the field_name\n                    if isinstance(field_name, str) and isinstance(prefix, str):\n                        field_name = field_name.replace(prefix, \"\")\n                    build_config = await update_component_build_config(\n                        component_class, build_config, field_value, \"model_name\"\n                    )\n        return dotdict({k: v.to_dict() if hasattr(v, \"to_dict\") else v for k, v in build_config.items()})\n"
+              },
+              "handle_parsing_errors": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Handle Parse Errors",
+                "dynamic": false,
+                "info": "Should the Agent fix errors when reading user input for better processing?",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "handle_parsing_errors",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "input_value": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Input",
+                "dynamic": false,
+                "info": "The input provided by the user for the agent to process.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "json_mode": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "JSON Mode",
+                "dynamic": false,
+                "info": "If True, it will output JSON regardless of passing a schema.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "json_mode",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "max_iterations": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Iterations",
+                "dynamic": false,
+                "info": "The maximum number of attempts the agent can make to complete its task before it stops.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_iterations",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 15
+              },
+              "max_retries": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Retries",
+                "dynamic": false,
+                "info": "The maximum number of retries to make when generating.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_retries",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 5
+              },
+              "max_tokens": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Tokens",
+                "dynamic": false,
+                "info": "The maximum number of tokens to generate. Set to 0 for unlimited tokens.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_tokens",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 128000,
+                  "min": 0,
+                  "step": 0.1,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": ""
+              },
+              "memory": {
+                "_input_type": "HandleInput",
+                "advanced": true,
+                "display_name": "External Memory",
+                "dynamic": false,
+                "info": "Retrieve messages from an external memory. If empty, it will use the Langflow tables.",
+                "input_types": [
+                  "Memory"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "memory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "model_kwargs": {
+                "_input_type": "DictInput",
+                "advanced": true,
+                "display_name": "Model Kwargs",
+                "dynamic": false,
+                "info": "Additional keyword arguments to pass to the model.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "model_kwargs",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "type": "dict",
+                "value": {}
+              },
+              "model_name": {
+                "_input_type": "DropdownInput",
+                "advanced": false,
+                "combobox": true,
+                "dialog_inputs": {},
+                "display_name": "Model Name",
+                "dynamic": false,
+                "info": "To see the model names, first choose a provider. Then, enter your API key and click the refresh button next to the model name.",
+                "name": "model_name",
+                "options": [
+                  "gpt-4o-mini",
+                  "gpt-4o",
+                  "gpt-4.1",
+                  "gpt-4.1-mini",
+                  "gpt-4.1-nano",
+                  "gpt-4.5-preview",
+                  "gpt-4-turbo",
+                  "gpt-4-turbo-preview",
+                  "gpt-4",
+                  "gpt-3.5-turbo",
+                  "o1"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "real_time_refresh": false,
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "gpt-4o"
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Messages",
+                "dynamic": false,
+                "info": "Number of messages to retrieve.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n_messages",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 100
+              },
+              "openai_api_base": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "OpenAI API Base",
+                "dynamic": false,
+                "info": "The base URL of the OpenAI API. Defaults to https://api.openai.com/v1. You can change this to use other APIs like JinaChat, LocalAI and Prem.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "openai_api_base",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "order": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Order",
+                "dynamic": false,
+                "info": "Order of the messages.",
+                "name": "order",
+                "options": [
+                  "Ascending",
+                  "Descending"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ascending"
+              },
+              "seed": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Seed",
+                "dynamic": false,
+                "info": "The seed controls the reproducibility of the job.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "seed",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 1
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Filter by sender type.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User",
+                  "Machine and User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine and User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Filter by sender name.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "system_prompt": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Agent Instructions",
+                "dynamic": false,
+                "info": "System Prompt: Initial instructions and context provided to guide the agent's behavior.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "system_prompt",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "temperature": {
+                "_input_type": "SliderInput",
+                "advanced": true,
+                "display_name": "Temperature",
+                "dynamic": false,
+                "info": "",
+                "max_label": "",
+                "max_label_icon": "",
+                "min_label": "",
+                "min_label_icon": "",
+                "name": "temperature",
+                "placeholder": "",
+                "range_spec": {
+                  "max": 1,
+                  "min": 0,
+                  "step": 0.01,
+                  "step_type": "float"
+                },
+                "required": false,
+                "show": true,
+                "slider_buttons": false,
+                "slider_buttons_options": [],
+                "slider_input": false,
+                "title_case": false,
+                "tool_mode": false,
+                "type": "slider",
+                "value": 0.1
+              },
+              "template": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "The template to use for formatting the data. It can contain the keys {text}, {sender} or any other key in the message data.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{sender_name}: {text}"
+              },
+              "timeout": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Timeout",
+                "dynamic": false,
+                "info": "The timeout for requests to OpenAI completion API.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "timeout",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 700
+              },
+              "tools": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Tools",
+                "dynamic": false,
+                "info": "These are the tools that the agent can use to help with tasks.",
+                "input_types": [
+                  "Tool"
+                ],
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tools",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "verbose": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Verbose",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "verbose",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Agent"
+        },
+        "dragging": false,
+        "id": "Agent-LlRiY",
+        "measured": {
+          "height": 621,
+          "width": 320
+        },
+        "position": {
+          "x": 238.36871659635716,
+          "y": -505.1248600791204
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "AstraDBToolComponent-Jknk8",
+          "node": {
+            "base_classes": [
+              "Data",
+              "Tool"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Tool to run hybrid vector and metadata search on DataStax Astra DB Collection",
+            "display_name": "Get Job Details Tool",
+            "documentation": "https://docs.langflow.org/Components/components-tools#astra-db-tool",
+            "edited": false,
+            "field_order": [
+              "tool_name",
+              "tool_description",
+              "keyspace",
+              "collection_name",
+              "token",
+              "api_endpoint",
+              "projection_attributes",
+              "tools_params_v2",
+              "tool_params",
+              "static_filters",
+              "number_of_results",
+              "use_search_query",
+              "use_vectorize",
+              "embedding",
+              "semantic_search_instruction"
+            ],
+            "frozen": false,
+            "icon": "AstraDB",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Data",
+                "method": "run_model",
+                "name": "api_run_model",
+                "required_inputs": [
+                  "api_endpoint",
+                  "collection_name",
+                  "projection_attributes",
+                  "semantic_search_instruction",
+                  "token",
+                  "tool_description",
+                  "tool_name"
+                ],
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Tool",
+                "hidden": false,
+                "method": "build_tool",
+                "name": "api_build_tool",
+                "required_inputs": [
+                  "api_endpoint",
+                  "collection_name",
+                  "projection_attributes",
+                  "semantic_search_instruction",
+                  "token",
+                  "tool_description",
+                  "tool_name"
+                ],
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_endpoint": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "API Endpoint",
+                "dynamic": false,
+                "info": "API endpoint URL for the Astra DB service.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "api_endpoint",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "import os\nfrom datetime import datetime, timezone\nfrom typing import Any\n\nfrom astrapy import Collection, DataAPIClient, Database\nfrom astrapy.admin import parse_api_endpoint\nfrom langchain.pydantic_v1 import BaseModel, Field, create_model\nfrom langchain_core.tools import StructuredTool, Tool\n\nfrom langflow.base.langchain_utilities.model import LCToolComponent\nfrom langflow.io import BoolInput, DictInput, HandleInput, IntInput, SecretStrInput, StrInput, TableInput\nfrom langflow.logging import logger\nfrom langflow.schema import Data\nfrom langflow.schema.table import EditMode\n\n\nclass AstraDBToolComponent(LCToolComponent):\n    display_name: str = \"Astra DB Tool\"\n    description: str = \"Tool to run hybrid vector and metadata search on DataStax Astra DB Collection\"\n    documentation: str = \"https://docs.langflow.org/Components/components-tools#astra-db-tool\"\n    icon: str = \"AstraDB\"\n\n    inputs = [\n        StrInput(\n            name=\"tool_name\",\n            display_name=\"Tool Name\",\n            info=\"The name of the tool to be passed to the LLM.\",\n            required=True,\n        ),\n        StrInput(\n            name=\"tool_description\",\n            display_name=\"Tool Description\",\n            info=\"Describe the tool to LLM. Add any information that can help the LLM to use the tool.\",\n            required=True,\n        ),\n        StrInput(\n            name=\"keyspace\",\n            display_name=\"Keyspace Name\",\n            info=\"The name of the keyspace within Astra where the collection is stored.\",\n            value=\"default_keyspace\",\n            advanced=True,\n        ),\n        StrInput(\n            name=\"collection_name\",\n            display_name=\"Collection Name\",\n            info=\"The name of the collection within Astra DB where the vectors will be stored.\",\n            required=True,\n        ),\n        SecretStrInput(\n            name=\"token\",\n            display_name=\"Astra DB Application Token\",\n            info=\"Authentication token for accessing Astra DB.\",\n            value=\"ASTRA_DB_APPLICATION_TOKEN\",\n            required=True,\n        ),\n        SecretStrInput(\n            name=\"api_endpoint\",\n            display_name=\"Database\" if os.getenv(\"ASTRA_ENHANCED\", \"false\").lower() == \"true\" else \"API Endpoint\",\n            info=\"API endpoint URL for the Astra DB service.\",\n            value=\"ASTRA_DB_API_ENDPOINT\",\n            required=True,\n        ),\n        StrInput(\n            name=\"projection_attributes\",\n            display_name=\"Projection Attributes\",\n            info=\"Attributes to be returned by the tool separated by comma.\",\n            required=True,\n            value=\"*\",\n            advanced=True,\n        ),\n        TableInput(\n            name=\"tools_params_v2\",\n            display_name=\"Tools Parameters\",\n            info=\"Define the structure for the tool parameters. Describe the parameters \"\n            \"in a way the LLM can understand how to use them.\",\n            required=False,\n            table_schema=[\n                {\n                    \"name\": \"name\",\n                    \"display_name\": \"Name\",\n                    \"type\": \"str\",\n                    \"description\": \"Specify the name of the output field/parameter for the model.\",\n                    \"default\": \"field\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n                {\n                    \"name\": \"attribute_name\",\n                    \"display_name\": \"Attribute Name\",\n                    \"type\": \"str\",\n                    \"description\": \"Specify the attribute name to be filtered on the collection. \"\n                    \"Leave empty if the attribute name is the same as the name of the field.\",\n                    \"default\": \"\",\n                    \"edit_mode\": EditMode.INLINE,\n                },\n                {\n                    \"name\": \"description\",\n                    \"display_name\": \"Description\",\n                    \"type\": \"str\",\n                    \"description\": \"Describe the purpose of the output field.\",\n                    \"default\": \"description of field\",\n                    \"edit_mode\": EditMode.POPOVER,\n                },\n                {\n                    \"name\": \"metadata\",\n                    \"display_name\": \"Is Metadata\",\n                    \"type\": \"boolean\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate if the field is included in the metadata field.\"),\n                    \"options\": [\"True\", \"False\"],\n                    \"default\": \"False\",\n                },\n                {\n                    \"name\": \"mandatory\",\n                    \"display_name\": \"Is Mandatory\",\n                    \"type\": \"boolean\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate if the field is mandatory.\"),\n                    \"options\": [\"True\", \"False\"],\n                    \"default\": \"False\",\n                },\n                {\n                    \"name\": \"is_timestamp\",\n                    \"display_name\": \"Is Timestamp\",\n                    \"type\": \"boolean\",\n                    \"edit_mode\": EditMode.INLINE,\n                    \"description\": (\"Indicate if the field is a timestamp.\"),\n                    \"options\": [\"True\", \"False\"],\n                    \"default\": \"False\",\n                },\n                {\n                    \"name\": \"operator\",\n                    \"display_name\": \"Operator\",\n                    \"type\": \"str\",\n                    \"description\": \"Set the operator for the field. \"\n                    \"https://docs.datastax.com/en/astra-db-serverless/api-reference/documents.html#operators\",\n                    \"default\": \"$eq\",\n                    \"options\": [\"$gt\", \"$gte\", \"$lt\", \"$lte\", \"$eq\", \"$ne\", \"$in\", \"$nin\", \"$exists\", \"$all\", \"$size\"],\n                    \"edit_mode\": EditMode.INLINE,\n                },\n            ],\n            value=[],\n        ),\n        DictInput(\n            name=\"tool_params\",\n            info=\"DEPRECATED: Attributes to filter and description to the model. \"\n            \"Add ! for mandatory (e.g: !customerId)\",\n            display_name=\"Tool params\",\n            is_list=True,\n            advanced=True,\n        ),\n        DictInput(\n            name=\"static_filters\",\n            info=\"Attributes to filter and correspoding value\",\n            display_name=\"Static filters\",\n            advanced=True,\n            is_list=True,\n        ),\n        IntInput(\n            name=\"number_of_results\",\n            display_name=\"Number of Results\",\n            info=\"Number of results to return.\",\n            advanced=True,\n            value=5,\n        ),\n        BoolInput(\n            name=\"use_search_query\",\n            display_name=\"Semantic Search\",\n            info=\"When this parameter is activated, the search query parameter will be used to search the collection.\",\n            advanced=False,\n            value=False,\n        ),\n        BoolInput(\n            name=\"use_vectorize\",\n            display_name=\"Use Astra DB Vectorize\",\n            info=\"When this parameter is activated, Astra DB Vectorize method will be used to generate the embeddings.\",\n            advanced=False,\n            value=False,\n        ),\n        HandleInput(name=\"embedding\", display_name=\"Embedding Model\", input_types=[\"Embeddings\"]),\n        StrInput(\n            name=\"semantic_search_instruction\",\n            display_name=\"Semantic Search Instruction\",\n            info=\"The instruction to use for the semantic search.\",\n            required=True,\n            value=\"Search query to find relevant documents.\",\n            advanced=True,\n        ),\n    ]\n\n    _cached_client: DataAPIClient | None = None\n    _cached_db: Database | None = None\n    _cached_collection: Collection | None = None\n\n    def _build_collection(self):\n        if self._cached_collection:\n            return self._cached_collection\n\n        try:\n            environment = parse_api_endpoint(self.api_endpoint).environment\n            cached_client = DataAPIClient(self.token, environment=environment)\n            cached_db = cached_client.get_database(self.api_endpoint, keyspace=self.keyspace)\n            self._cached_collection = cached_db.get_collection(self.collection_name)\n        except Exception as e:\n            msg = f\"Error building collection: {e}\"\n            raise ValueError(msg) from e\n        else:\n            return self._cached_collection\n\n    def create_args_schema(self) -> dict[str, BaseModel]:\n        \"\"\"DEPRECATED: This method is deprecated. Please use create_args_schema_v2 instead.\n\n        It is keep only for backward compatibility.\n        \"\"\"\n        logger.warning(\"This is the old way to define the tool parameters. Please use the new way.\")\n        args: dict[str, tuple[Any, Field] | list[str]] = {}\n\n        for key in self.tool_params:\n            if key.startswith(\"!\"):  # Mandatory\n                args[key[1:]] = (str, Field(description=self.tool_params[key]))\n            else:  # Optional\n                args[key] = (str | None, Field(description=self.tool_params[key], default=None))\n\n        if self.use_search_query:\n            args[\"search_query\"] = (\n                str | None,\n                Field(description=\"Search query to find relevant documents.\", default=None),\n            )\n\n        model = create_model(\"ToolInput\", **args, __base__=BaseModel)\n        return {\"ToolInput\": model}\n\n    def create_args_schema_v2(self) -> dict[str, BaseModel]:\n        \"\"\"Create the tool input schema using the new tool parameters configuration.\"\"\"\n        args: dict[str, tuple[Any, Field] | list[str]] = {}\n\n        for tool_param in self.tools_params_v2:\n            if tool_param[\"mandatory\"]:\n                args[tool_param[\"name\"]] = (str, Field(description=tool_param[\"description\"]))\n            else:\n                args[tool_param[\"name\"]] = (str | None, Field(description=tool_param[\"description\"], default=None))\n\n        if self.use_search_query:\n            args[\"search_query\"] = (\n                str,\n                Field(description=self.semantic_search_instruction),\n            )\n\n        model = create_model(\"ToolInput\", **args, __base__=BaseModel)\n        return {\"ToolInput\": model}\n\n    def build_tool(self) -> Tool:\n        \"\"\"Builds an Astra DB Collection tool.\n\n        Returns:\n            Tool: The built Astra DB tool.\n        \"\"\"\n        schema_dict = self.create_args_schema() if len(self.tool_params.keys()) > 0 else self.create_args_schema_v2()\n\n        tool = StructuredTool.from_function(\n            name=self.tool_name,\n            args_schema=schema_dict[\"ToolInput\"],\n            description=self.tool_description,\n            func=self.run_model,\n            return_direct=False,\n        )\n        self.status = \"Astra DB Tool created\"\n\n        return tool\n\n    def projection_args(self, input_str: str) -> dict | None:\n        \"\"\"Build the projection arguments for the AstraDB query.\"\"\"\n        elements = input_str.split(\",\")\n        result = {}\n\n        if elements == [\"*\"]:\n            return None\n\n        # Force the projection to exclude the $vector field as it is not required by the tool\n        result[\"$vector\"] = False\n\n        # Fields with ! as prefix should be removed from the projection\n        for element in elements:\n            if element.startswith(\"!\"):\n                result[element[1:]] = False\n            else:\n                result[element] = True\n\n        return result\n\n    def parse_timestamp(self, timestamp_str: str) -> datetime:\n        \"\"\"Parse a timestamp string into Astra DB REST API format.\n\n        Args:\n            timestamp_str (str): Input timestamp string\n\n        Returns:\n            datetime: Datetime object\n\n        Raises:\n            ValueError: If the timestamp cannot be parsed\n        \"\"\"\n        # Common datetime formats to try\n        formats = [\n            \"%Y-%m-%d\",  # 2024-03-21\n            \"%Y-%m-%dT%H:%M:%S\",  # 2024-03-21T15:30:00\n            \"%Y-%m-%dT%H:%M:%S%z\",  # 2024-03-21T15:30:00+0000\n            \"%Y-%m-%d %H:%M:%S\",  # 2024-03-21 15:30:00\n            \"%d/%m/%Y\",  # 21/03/2024\n            \"%Y/%m/%d\",  # 2024/03/21\n        ]\n\n        for fmt in formats:\n            try:\n                # Parse the date string\n                date_obj = datetime.strptime(timestamp_str, fmt).astimezone()\n\n                # If the parsed date has no timezone info, assume UTC\n                if date_obj.tzinfo is None:\n                    date_obj = date_obj.replace(tzinfo=timezone.utc)\n\n                # Convert to UTC and format\n                return date_obj.astimezone(timezone.utc)\n\n            except ValueError:\n                continue\n\n        msg = f\"Could not parse date: {timestamp_str}\"\n        logger.error(msg)\n        raise ValueError(msg)\n\n    def build_filter(self, args: dict, filter_settings: list) -> dict:\n        \"\"\"Build filter dictionary for AstraDB query.\n\n        Args:\n            args: Dictionary of arguments from the tool\n            filter_settings: List of filter settings from tools_params_v2\n        Returns:\n            Dictionary containing the filter conditions\n        \"\"\"\n        filters = {**self.static_filters}\n\n        for key, value in args.items():\n            # Skip search_query as it's handled separately\n            if key == \"search_query\":\n                continue\n\n            filter_setting = next((x for x in filter_settings if x[\"name\"] == key), None)\n            if filter_setting and value is not None:\n                field_name = filter_setting[\"attribute_name\"] if filter_setting[\"attribute_name\"] else key\n                filter_key = field_name if not filter_setting[\"metadata\"] else f\"metadata.{field_name}\"\n                if filter_setting[\"operator\"] == \"$exists\":\n                    filters[filter_key] = {**filters.get(filter_key, {}), filter_setting[\"operator\"]: True}\n                elif filter_setting[\"operator\"] in [\"$in\", \"$nin\", \"$all\"]:\n                    filters[filter_key] = {\n                        **filters.get(filter_key, {}),\n                        filter_setting[\"operator\"]: value.split(\",\") if isinstance(value, str) else value,\n                    }\n                elif filter_setting[\"is_timestamp\"] == True:  # noqa: E712\n                    try:\n                        filters[filter_key] = {\n                            **filters.get(filter_key, {}),\n                            filter_setting[\"operator\"]: self.parse_timestamp(value),\n                        }\n                    except ValueError as e:\n                        msg = f\"Error parsing timestamp: {e} - Use the prompt to specify the date in the correct format\"\n                        logger.error(msg)\n                        raise ValueError(msg) from e\n                else:\n                    filters[filter_key] = {**filters.get(filter_key, {}), filter_setting[\"operator\"]: value}\n        return filters\n\n    def run_model(self, **args) -> Data | list[Data]:\n        \"\"\"Run the query to get the data from the AstraDB collection.\"\"\"\n        collection = self._build_collection()\n        sort = {}\n\n        # Build filters using the new method\n        filters = self.build_filter(args, self.tools_params_v2)\n\n        # Build the vector search on\n        if self.use_search_query and args[\"search_query\"] is not None and args[\"search_query\"] != \"\":\n            if self.use_vectorize:\n                sort[\"$vectorize\"] = args[\"search_query\"]\n            else:\n                if self.embedding is None:\n                    msg = \"Embedding model is not set. Please set the embedding model or use Astra DB Vectorize.\"\n                    logger.error(msg)\n                    raise ValueError(msg)\n                embedding_query = self.embedding.embed_query(args[\"search_query\"])\n                sort[\"$vector\"] = embedding_query\n            del args[\"search_query\"]\n\n        find_options = {\n            \"filter\": filters,\n            \"limit\": self.number_of_results,\n            \"sort\": sort,\n        }\n\n        projection = self.projection_args(self.projection_attributes)\n        if projection and len(projection) > 0:\n            find_options[\"projection\"] = projection\n\n        try:\n            results = collection.find(**find_options)\n        except Exception as e:\n            msg = f\"Error on Astra DB Tool {self.tool_name} request: {e}\"\n            logger.error(msg)\n            raise ValueError(msg) from e\n\n        logger.info(f\"Tool {self.tool_name} executed`\")\n\n        data: list[Data] = [Data(data=doc) for doc in results]\n        self.status = data\n        return data\n"
+              },
+              "collection_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Collection Name",
+                "dynamic": false,
+                "info": "The name of the collection within Astra DB where the vectors will be stored.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "collection_name",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "job_data"
+              },
+              "embedding": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "Embedding Model",
+                "dynamic": false,
+                "info": "",
+                "input_types": [
+                  "Embeddings"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "embedding",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "keyspace": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Keyspace Name",
+                "dynamic": false,
+                "info": "The name of the keyspace within Astra where the collection is stored.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "keyspace",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "default_keyspace"
+              },
+              "number_of_results": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Results",
+                "dynamic": false,
+                "info": "Number of results to return.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "number_of_results",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 1
+              },
+              "projection_attributes": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Projection Attributes",
+                "dynamic": false,
+                "info": "Attributes to be returned by the tool separated by comma.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "projection_attributes",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "*"
+              },
+              "semantic_search_instruction": {
+                "_input_type": "StrInput",
+                "advanced": true,
+                "display_name": "Semantic Search Instruction",
+                "dynamic": false,
+                "info": "The instruction to use for the semantic search.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "semantic_search_instruction",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Search query to find relevant documents."
+              },
+              "static_filters": {
+                "_input_type": "DictInput",
+                "advanced": true,
+                "display_name": "Static filters",
+                "dynamic": false,
+                "info": "Attributes to filter and correspoding value",
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "static_filters",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "type": "dict",
+                "value": {}
+              },
+              "token": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Astra DB Application Token",
+                "dynamic": false,
+                "info": "Authentication token for accessing Astra DB.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "token",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "tool_description": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Tool Description",
+                "dynamic": false,
+                "info": "Describe the tool to LLM. Add any information that can help the LLM to use the tool.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_description",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Retrieves details for a specific job using its ID. Requires a 'job_id' filter."
+              },
+              "tool_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Tool Name",
+                "dynamic": false,
+                "info": "The name of the tool to be passed to the LLM.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_name",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "GetJobDetailsToolComponent"
+              },
+              "tool_params": {
+                "_input_type": "DictInput",
+                "advanced": true,
+                "display_name": "Tool params",
+                "dynamic": false,
+                "info": "DEPRECATED: Attributes to filter and description to the model. Add ! for mandatory (e.g: !customerId)",
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "tool_params",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "type": "dict",
+                "value": {}
+              },
+              "tools_params_v2": {
+                "_input_type": "TableInput",
+                "advanced": false,
+                "display_name": "Tools Parameters",
+                "dynamic": false,
+                "info": "Define the structure for the tool parameters. Describe the parameters in a way the LLM can understand how to use them.",
+                "is_list": true,
+                "list_add_label": "Add More",
+                "name": "tools_params_v2",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "table_icon": "Table",
+                "table_schema": {
+                  "columns": [
+                    {
+                      "default": "field",
+                      "description": "Specify the name of the output field/parameter for the model.",
+                      "disable_edit": false,
+                      "display_name": "Name",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "name",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "",
+                      "description": "Specify the attribute name to be filtered on the collection. Leave empty if the attribute name is the same as the name of the field.",
+                      "disable_edit": false,
+                      "display_name": "Attribute Name",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "attribute_name",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": "description of field",
+                      "description": "Describe the purpose of the output field.",
+                      "disable_edit": false,
+                      "display_name": "Description",
+                      "edit_mode": "popover",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "description",
+                      "sortable": true,
+                      "type": "str"
+                    },
+                    {
+                      "default": false,
+                      "description": "Indicate if the field is included in the metadata field.",
+                      "disable_edit": false,
+                      "display_name": "Is Metadata",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "boolean",
+                      "hidden": false,
+                      "name": "metadata",
+                      "options": [
+                        "True",
+                        "False"
+                      ],
+                      "sortable": true,
+                      "type": "boolean"
+                    },
+                    {
+                      "default": false,
+                      "description": "Indicate if the field is mandatory.",
+                      "disable_edit": false,
+                      "display_name": "Is Mandatory",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "boolean",
+                      "hidden": false,
+                      "name": "mandatory",
+                      "options": [
+                        "True",
+                        "False"
+                      ],
+                      "sortable": true,
+                      "type": "boolean"
+                    },
+                    {
+                      "default": false,
+                      "description": "Indicate if the field is a timestamp.",
+                      "disable_edit": false,
+                      "display_name": "Is Timestamp",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "boolean",
+                      "hidden": false,
+                      "name": "is_timestamp",
+                      "options": [
+                        "True",
+                        "False"
+                      ],
+                      "sortable": true,
+                      "type": "boolean"
+                    },
+                    {
+                      "default": "$eq",
+                      "description": "Set the operator for the field. https://docs.datastax.com/en/astra-db-serverless/api-reference/documents.html#operators",
+                      "disable_edit": false,
+                      "display_name": "Operator",
+                      "edit_mode": "inline",
+                      "filterable": true,
+                      "formatter": "text",
+                      "hidden": false,
+                      "name": "operator",
+                      "options": [
+                        "$gt",
+                        "$gte",
+                        "$lt",
+                        "$lte",
+                        "$eq",
+                        "$ne",
+                        "$in",
+                        "$nin",
+                        "$exists",
+                        "$all",
+                        "$size"
+                      ],
+                      "sortable": true,
+                      "type": "str"
+                    }
+                  ]
+                },
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "trigger_icon": "Table",
+                "trigger_text": "Open table",
+                "type": "table",
+                "value": [
+                  {
+                    "attribute_name": "",
+                    "description": "job id",
+                    "is_timestamp": false,
+                    "mandatory": true,
+                    "metadata": false,
+                    "name": "job_id",
+                    "operator": "$eq"
+                  }
+                ]
+              },
+              "use_search_query": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Semantic Search",
+                "dynamic": false,
+                "info": "When this parameter is activated, the search query parameter will be used to search the collection.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_search_query",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              },
+              "use_vectorize": {
+                "_input_type": "BoolInput",
+                "advanced": false,
+                "display_name": "Use Astra DB Vectorize",
+                "dynamic": false,
+                "info": "When this parameter is activated, Astra DB Vectorize method will be used to generate the embeddings.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "use_vectorize",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": false
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "AstraDBToolComponent"
+        },
+        "dragging": false,
+        "id": "AstraDBToolComponent-Jknk8",
+        "measured": {
+          "height": 919,
+          "width": 320
+        },
+        "position": {
+          "x": -686.6375409399849,
+          "y": -334.10405685792307
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Prompt-hmJTA",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {
+              "template": [
+                "session_id",
+                "memory",
+                "input"
+              ]
+            },
+            "description": "Create a prompt template with dynamic variables.",
+            "display_name": "Prompt",
+            "documentation": "",
+            "edited": false,
+            "error": null,
+            "field_order": [
+              "template",
+              "tool_placeholder"
+            ],
+            "frozen": false,
+            "full_path": null,
+            "icon": "prompts",
+            "is_composition": null,
+            "is_input": null,
+            "is_output": null,
+            "legacy": false,
+            "metadata": {},
+            "minimized": false,
+            "name": "",
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Prompt Message",
+                "hidden": false,
+                "method": "build_prompt",
+                "name": "prompt",
+                "options": null,
+                "required_inputs": null,
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "priority": null,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.prompts.api_utils import process_prompt_template\nfrom langflow.custom import Component\nfrom langflow.inputs.inputs import DefaultPromptField\nfrom langflow.io import MessageTextInput, Output, PromptInput\nfrom langflow.schema.message import Message\nfrom langflow.template.utils import update_template_values\n\n\nclass PromptComponent(Component):\n    display_name: str = \"Prompt\"\n    description: str = \"Create a prompt template with dynamic variables.\"\n    icon = \"prompts\"\n    trace_type = \"prompt\"\n    name = \"Prompt\"\n\n    inputs = [\n        PromptInput(name=\"template\", display_name=\"Template\"),\n        MessageTextInput(\n            name=\"tool_placeholder\",\n            display_name=\"Tool Placeholder\",\n            tool_mode=True,\n            advanced=True,\n            info=\"A placeholder input for tool mode.\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Prompt Message\", name=\"prompt\", method=\"build_prompt\"),\n    ]\n\n    async def build_prompt(self) -> Message:\n        prompt = Message.from_template(**self._attributes)\n        self.status = prompt.text\n        return prompt\n\n    def _update_template(self, frontend_node: dict):\n        prompt_template = frontend_node[\"template\"][\"template\"][\"value\"]\n        custom_fields = frontend_node[\"custom_fields\"]\n        frontend_node_template = frontend_node[\"template\"]\n        _ = process_prompt_template(\n            template=prompt_template,\n            name=\"template\",\n            custom_fields=custom_fields,\n            frontend_node_template=frontend_node_template,\n        )\n        return frontend_node\n\n    async def update_frontend_node(self, new_frontend_node: dict, current_frontend_node: dict):\n        \"\"\"This function is called after the code validation is done.\"\"\"\n        frontend_node = await super().update_frontend_node(new_frontend_node, current_frontend_node)\n        template = frontend_node[\"template\"][\"template\"][\"value\"]\n        # Kept it duplicated for backwards compatibility\n        _ = process_prompt_template(\n            template=template,\n            name=\"template\",\n            custom_fields=frontend_node[\"custom_fields\"],\n            frontend_node_template=frontend_node[\"template\"],\n        )\n        # Now that template is updated, we need to grab any values that were set in the current_frontend_node\n        # and update the frontend_node with those values\n        update_template_values(new_template=frontend_node, previous_template=current_frontend_node[\"template\"])\n        return frontend_node\n\n    def _get_fallback_input(self, **kwargs):\n        return DefaultPromptField(**kwargs)\n"
+              },
+              "input": {
+                "advanced": false,
+                "display_name": "input",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "memory": {
+                "advanced": false,
+                "display_name": "memory",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "memory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "session_id": {
+                "advanced": false,
+                "display_name": "session_id",
+                "dynamic": false,
+                "field_type": "str",
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "template": {
+                "_input_type": "PromptInput",
+                "advanced": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "type": "prompt",
+                "value": "SYSTEM MESSAGE:\nYou are Resty, an AI Recruiter. Follow these instructions EXACTLY.\n\n**CORE RULE: YOUR RESPONSE TO THE USER MUST *EXACTLY* MATCH THE FORMAT SPECIFIED IN THE 'Compose Output' / 'Respond' STEP.**\n- DO NOT add any extra text, context, or raw tool output. Any deviation WILL cause failure.\n\nSESSION ID: {session_id}\nHISTORY: {memory}\n\nTOOLS:\n- GetJobDetailsToolComponent(job_id: str): Use ONLY for user job questions. Retrieves job details including 'pre_assessment_questions' list.\n- manage_assessment_state_astra_v1(session_id_input: str, action: str, answer_payload: Optional[str], questions_payload: Optional[List[str]]): Use ONLY for assessment state (INITIALIZE, GET_CURRENT, RECORD_ANSWER).\n\nPROCEDURE:\n\n**1. START (First turn ONLY):**\n    a. Get Job ID from first user message in HISTORY. Let it be EXTRACTED_JOB_ID.\n    b. Call `GetJobDetailsToolComponent(job_id=EXTRACTED_JOB_ID)`. Note Job Title, Company, and the text of the FIRST question in the `pre_assessment_questions` list.\n    c. Call `manage_assessment_state_astra_v1(session_id_input={session_id}, action='INITIALIZE_WITH_QUESTIONS', questions_payload=pre_assessment_questions)`. (Ignore the tool's text output here).\n    d. **Compose Output:** Create the response string: \"Welcome! You are applying for [Job Title] at [Company Name].\\n\\nLet's start: [Text of the first question noted in step 1b]\"  *(Added '\\\\n\\\\n' before 'Let's start')*\n    e. **Respond:** Your response MUST be ONLY the exact string composed in step 1d.\n\n**2. ASSESSMENT LOOP (Subsequent turns):**\n    a. Get user input ({input}).\n    b. **IF input answers the last assessment question:**\n        1. Call `manage_assessment_state_astra_v1(session_id_input={session_id}, action='RECORD_ANSWER_AND_GET_NEXT', answer_payload=input)`. Note the exact text result.\n        2. IF text result is \"[ASSESSMENT_COMPLETE]\": Proceed DIRECTLY to Step 3. DO NOT RESPOND YET.\n        3. IF text result starts with \"Error:\": **Compose Output:** \"[Error message text]\". **Respond:** Your response MUST be ONLY the exact error string. STOP.\n        4. ELSE (text result is next question): **Compose Output:** \"Okay.\\n\\nNext question: [Next question text from tool]\". *(Added '\\\\n\\\\n' before 'Next question')* **Respond:** Your response MUST be ONLY the exact string composed.\n    c. **ELIF input asks about the job:**\n        1. Call `manage_assessment_state_astra_v1(session_id_input={session_id}, action='GET_CURRENT_QUESTION')`. Note the 'pending question text'.\n        2. Call `GetJobDetailsToolComponent(job_id=EXTRACTED_JOB_ID)`. Formulate concise 'clarification answer'.\n        3. **Compose Output:** \"[Clarification answer]\\n\\nNow, back to our question: [Pending question text]\". *(Ensured '\\\\n\\\\n' separation)*\n        4. **Respond:** Your response MUST be ONLY the exact string composed in step 2.c.3. (DO NOT call RECORD_ANSWER).\n    d. **ELSE (input is irrelevant):**\n        1. Call `manage_assessment_state_astra_v1(session_id_input={session_id}, action='GET_CURRENT_QUESTION')`. Note the 'pending question text'.\n        2. **Compose Output:** \"My apologies, I can only discuss this job or the assessment.\\n\\nLet's continue: [Pending question text]\". *(Added '\\\\n\\\\n' before 'Let's continue')*\n        3. **Respond:** Your response MUST be ONLY the exact string composed in step 2.d.2. (DO NOT call RECORD_ANSWER).\n\n**3. COMPLETION (Triggered *ONLY* by \"[ASSESSMENT_COMPLETE]\" signal from Step 2.b):**\n    a. Parse HISTORY for actual assessment Q&A pairs.\n    b. Format summary: \"1. [Q1]? A: [A1]\\n2. [Q2]? A: [A2]...\"\n    c. **Compose Output:** \"Thank you for completing the interview.\\n\\nSummary:\\n[Formatted summary]\\n\\nA recruiter will review your answers.\\n\\nDo you have any final questions?\". *(Added '\\\\n\\\\n' strategically)*\n    d. **Respond:** Your response MUST be ONLY the exact string composed in step 3c.\n\n**FINAL CHECK:** Does your planned response exactly match the required format for the step you are in, including newlines? If not, rewrite it until it does."
+              },
+              "tool_placeholder": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Tool Placeholder",
+                "dynamic": false,
+                "info": "A placeholder input for tool mode.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "tool_placeholder",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": true,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Prompt"
+        },
+        "dragging": false,
+        "id": "Prompt-hmJTA",
+        "measured": {
+          "height": 575,
+          "width": 320
+        },
+        "position": {
+          "x": -321.57636908920415,
+          "y": -1055.4828875741991
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "Memory-Nwp1N",
+          "node": {
+            "base_classes": [
+              "Data",
+              "DataFrame",
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Retrieves stored chat messages from Langflow tables or an external memory.",
+            "display_name": "Message History",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "memory",
+              "sender",
+              "sender_name",
+              "n_messages",
+              "session_id",
+              "order",
+              "template"
+            ],
+            "frozen": false,
+            "icon": "message-square-more",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Data",
+                "method": "retrieve_messages",
+                "name": "messages",
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "hidden": false,
+                "method": "retrieve_messages_as_text",
+                "name": "messages_text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "DataFrame",
+                "method": "as_dataframe",
+                "name": "dataframe",
+                "selected": "DataFrame",
+                "tool_mode": true,
+                "types": [
+                  "DataFrame"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.custom import Component\nfrom langflow.helpers.data import data_to_text\nfrom langflow.inputs import HandleInput\nfrom langflow.io import DropdownInput, IntInput, MessageTextInput, MultilineInput, Output\nfrom langflow.memory import aget_messages\nfrom langflow.schema import Data\nfrom langflow.schema.dataframe import DataFrame\nfrom langflow.schema.message import Message\nfrom langflow.utils.constants import MESSAGE_SENDER_AI, MESSAGE_SENDER_USER\n\n\nclass MemoryComponent(Component):\n    display_name = \"Message History\"\n    description = \"Retrieves stored chat messages from Langflow tables or an external memory.\"\n    icon = \"message-square-more\"\n    name = \"Memory\"\n\n    inputs = [\n        HandleInput(\n            name=\"memory\",\n            display_name=\"External Memory\",\n            input_types=[\"Memory\"],\n            info=\"Retrieve messages from an external memory. If empty, it will use the Langflow tables.\",\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER, \"Machine and User\"],\n            value=\"Machine and User\",\n            info=\"Filter by sender type.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Filter by sender name.\",\n            advanced=True,\n        ),\n        IntInput(\n            name=\"n_messages\",\n            display_name=\"Number of Messages\",\n            value=100,\n            info=\"Number of messages to retrieve.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"order\",\n            display_name=\"Order\",\n            options=[\"Ascending\", \"Descending\"],\n            value=\"Ascending\",\n            info=\"Order of the messages.\",\n            advanced=True,\n            tool_mode=True,\n        ),\n        MultilineInput(\n            name=\"template\",\n            display_name=\"Template\",\n            info=\"The template to use for formatting the data. \"\n            \"It can contain the keys {text}, {sender} or any other key in the message data.\",\n            value=\"{sender_name}: {text}\",\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Data\", name=\"messages\", method=\"retrieve_messages\"),\n        Output(display_name=\"Message\", name=\"messages_text\", method=\"retrieve_messages_as_text\"),\n        Output(display_name=\"DataFrame\", name=\"dataframe\", method=\"as_dataframe\"),\n    ]\n\n    async def retrieve_messages(self) -> Data:\n        sender = self.sender\n        sender_name = self.sender_name\n        session_id = self.session_id\n        n_messages = self.n_messages\n        order = \"DESC\" if self.order == \"Descending\" else \"ASC\"\n\n        if sender == \"Machine and User\":\n            sender = None\n\n        if self.memory and not hasattr(self.memory, \"aget_messages\"):\n            memory_name = type(self.memory).__name__\n            err_msg = f\"External Memory object ({memory_name}) must have 'aget_messages' method.\"\n            raise AttributeError(err_msg)\n\n        if self.memory:\n            # override session_id\n            self.memory.session_id = session_id\n\n            stored = await self.memory.aget_messages()\n            # langchain memories are supposed to return messages in ascending order\n            if order == \"DESC\":\n                stored = stored[::-1]\n            if n_messages:\n                stored = stored[:n_messages]\n            stored = [Message.from_lc_message(m) for m in stored]\n            if sender:\n                expected_type = MESSAGE_SENDER_AI if sender == MESSAGE_SENDER_AI else MESSAGE_SENDER_USER\n                stored = [m for m in stored if m.type == expected_type]\n        else:\n            stored = await aget_messages(\n                sender=sender,\n                sender_name=sender_name,\n                session_id=session_id,\n                limit=n_messages,\n                order=order,\n            )\n        self.status = stored\n        return stored\n\n    async def retrieve_messages_as_text(self) -> Message:\n        stored_text = data_to_text(self.template, await self.retrieve_messages())\n        self.status = stored_text\n        return Message(text=stored_text)\n\n    async def as_dataframe(self) -> DataFrame:\n        \"\"\"Convert the retrieved messages into a DataFrame.\n\n        Returns:\n            DataFrame: A DataFrame containing the message data.\n        \"\"\"\n        messages = await self.retrieve_messages()\n        return DataFrame(messages)\n"
+              },
+              "memory": {
+                "_input_type": "HandleInput",
+                "advanced": false,
+                "display_name": "External Memory",
+                "dynamic": false,
+                "info": "Retrieve messages from an external memory. If empty, it will use the Langflow tables.",
+                "input_types": [
+                  "Memory"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "memory",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "other",
+                "value": ""
+              },
+              "n_messages": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Number of Messages",
+                "dynamic": false,
+                "info": "Number of messages to retrieve.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "n_messages",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 100
+              },
+              "order": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Order",
+                "dynamic": false,
+                "info": "Order of the messages.",
+                "name": "order",
+                "options": [
+                  "Ascending",
+                  "Descending"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Ascending"
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Filter by sender type.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User",
+                  "Machine and User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "Machine and User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Filter by sender name.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "template": {
+                "_input_type": "MultilineInput",
+                "advanced": true,
+                "copy_field": false,
+                "display_name": "Template",
+                "dynamic": false,
+                "info": "The template to use for formatting the data. It can contain the keys {text}, {sender} or any other key in the message data.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "template",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "{sender_name}: {text}"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "Memory"
+        },
+        "dragging": false,
+        "id": "Memory-Nwp1N",
+        "measured": {
+          "height": 307,
+          "width": 320
+        },
+        "position": {
+          "x": -1113.186310369238,
+          "y": -611.3650745214303
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "ChatInput-whxnQ",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get chat inputs from the Playground.",
+            "display_name": "Chat Input",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "input_value",
+              "should_store_message",
+              "sender",
+              "sender_name",
+              "session_id",
+              "files",
+              "background_color",
+              "chat_icon",
+              "text_color"
+            ],
+            "frozen": false,
+            "icon": "MessagesSquare",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": true,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Message",
+                "method": "message_response",
+                "name": "message",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "background_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Background Color",
+                "dynamic": false,
+                "info": "The background color of the icon.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "background_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "chat_icon": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Icon",
+                "dynamic": false,
+                "info": "The icon of the message.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "chat_icon",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from langflow.base.data.utils import IMG_FILE_TYPES, TEXT_FILE_TYPES\nfrom langflow.base.io.chat import ChatComponent\nfrom langflow.inputs import BoolInput\nfrom langflow.io import (\n    DropdownInput,\n    FileInput,\n    MessageTextInput,\n    MultilineInput,\n    Output,\n)\nfrom langflow.schema.message import Message\nfrom langflow.utils.constants import (\n    MESSAGE_SENDER_AI,\n    MESSAGE_SENDER_NAME_USER,\n    MESSAGE_SENDER_USER,\n)\n\n\nclass ChatInput(ChatComponent):\n    display_name = \"Chat Input\"\n    description = \"Get chat inputs from the Playground.\"\n    icon = \"MessagesSquare\"\n    name = \"ChatInput\"\n    minimized = True\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            value=\"\",\n            info=\"Message to be passed as input.\",\n            input_types=[],\n        ),\n        BoolInput(\n            name=\"should_store_message\",\n            display_name=\"Store Messages\",\n            info=\"Store the message in the history.\",\n            value=True,\n            advanced=True,\n        ),\n        DropdownInput(\n            name=\"sender\",\n            display_name=\"Sender Type\",\n            options=[MESSAGE_SENDER_AI, MESSAGE_SENDER_USER],\n            value=MESSAGE_SENDER_USER,\n            info=\"Type of sender.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"sender_name\",\n            display_name=\"Sender Name\",\n            info=\"Name of the sender.\",\n            value=MESSAGE_SENDER_NAME_USER,\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"session_id\",\n            display_name=\"Session ID\",\n            info=\"The session ID of the chat. If empty, the current session ID parameter will be used.\",\n            advanced=True,\n        ),\n        FileInput(\n            name=\"files\",\n            display_name=\"Files\",\n            file_types=TEXT_FILE_TYPES + IMG_FILE_TYPES,\n            info=\"Files to be sent with the message.\",\n            advanced=True,\n            is_list=True,\n            temp_file=True,\n        ),\n        MessageTextInput(\n            name=\"background_color\",\n            display_name=\"Background Color\",\n            info=\"The background color of the icon.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"chat_icon\",\n            display_name=\"Icon\",\n            info=\"The icon of the message.\",\n            advanced=True,\n        ),\n        MessageTextInput(\n            name=\"text_color\",\n            display_name=\"Text Color\",\n            info=\"The text color of the name\",\n            advanced=True,\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Message\", name=\"message\", method=\"message_response\"),\n    ]\n\n    async def message_response(self) -> Message:\n        background_color = self.background_color\n        text_color = self.text_color\n        icon = self.chat_icon\n\n        message = await Message.create(\n            text=self.input_value,\n            sender=self.sender,\n            sender_name=self.sender_name,\n            session_id=self.session_id,\n            files=self.files,\n            properties={\n                \"background_color\": background_color,\n                \"text_color\": text_color,\n                \"icon\": icon,\n            },\n        )\n        if self.session_id and isinstance(message, Message) and self.should_store_message:\n            stored_message = await self.send_message(\n                message,\n            )\n            self.message.value = stored_message\n            message = stored_message\n\n        self.status = message\n        return message\n"
+              },
+              "files": {
+                "_input_type": "FileInput",
+                "advanced": true,
+                "display_name": "Files",
+                "dynamic": false,
+                "fileTypes": [
+                  "txt",
+                  "md",
+                  "mdx",
+                  "csv",
+                  "json",
+                  "yaml",
+                  "yml",
+                  "xml",
+                  "html",
+                  "htm",
+                  "pdf",
+                  "docx",
+                  "py",
+                  "sh",
+                  "sql",
+                  "js",
+                  "ts",
+                  "tsx",
+                  "jpg",
+                  "jpeg",
+                  "png",
+                  "bmp",
+                  "image"
+                ],
+                "file_path": "",
+                "info": "Files to be sent with the message.",
+                "list": true,
+                "list_add_label": "Add More",
+                "name": "files",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "temp_file": true,
+                "title_case": false,
+                "trace_as_metadata": true,
+                "type": "file",
+                "value": ""
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "copy_field": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Message to be passed as input.",
+                "input_types": [],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "sender": {
+                "_input_type": "DropdownInput",
+                "advanced": true,
+                "combobox": false,
+                "dialog_inputs": {},
+                "display_name": "Sender Type",
+                "dynamic": false,
+                "info": "Type of sender.",
+                "name": "sender",
+                "options": [
+                  "Machine",
+                  "User"
+                ],
+                "options_metadata": [],
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "toggle": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "sender_name": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Sender Name",
+                "dynamic": false,
+                "info": "Name of the sender.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "sender_name",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "User"
+              },
+              "session_id": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Session ID",
+                "dynamic": false,
+                "info": "The session ID of the chat. If empty, the current session ID parameter will be used.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "session_id",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "should_store_message": {
+                "_input_type": "BoolInput",
+                "advanced": true,
+                "display_name": "Store Messages",
+                "dynamic": false,
+                "info": "Store the message in the history.",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "should_store_message",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "bool",
+                "value": true
+              },
+              "text_color": {
+                "_input_type": "MessageTextInput",
+                "advanced": true,
+                "display_name": "Text Color",
+                "dynamic": false,
+                "info": "The text color of the name",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "text_color",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": false,
+          "type": "ChatInput"
+        },
+        "dragging": false,
+        "id": "ChatInput-whxnQ",
+        "measured": {
+          "height": 66,
+          "width": 192
+        },
+        "position": {
+          "x": -44.69424524599559,
+          "y": 300.130163391056
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "AstraDBAssessmentStateManagerTool-zioT6",
+          "node": {
+            "base_classes": [
+              "Data",
+              "Tool"
+            ],
+            "beta": true,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Manages assessment state using an Astra DB collection for persistence.",
+            "display_name": "Astra DB Assessment State Manager",
+            "documentation": "",
+            "edited": false,
+            "field_order": [
+              "keyspace",
+              "collection_name",
+              "token",
+              "api_endpoint"
+            ],
+            "frozen": false,
+            "icon": "AstraDB",
+            "legacy": false,
+            "lf_version": "1.3.4",
+            "metadata": {},
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Data",
+                "method": "run_model",
+                "name": "api_run_model",
+                "options": null,
+                "required_inputs": [],
+                "selected": "Data",
+                "tool_mode": true,
+                "types": [
+                  "Data"
+                ],
+                "value": "__UNDEFINED__"
+              },
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Tool",
+                "hidden": false,
+                "method": "build_tool",
+                "name": "api_build_tool",
+                "options": null,
+                "required_inputs": [
+                  "api_endpoint",
+                  "collection_name",
+                  "token"
+                ],
+                "selected": "Tool",
+                "tool_mode": true,
+                "types": [
+                  "Tool"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "api_endpoint": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "API Endpoint / Database ID",
+                "dynamic": false,
+                "info": "API endpoint URL or Database ID for the Astra DB service.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "api_endpoint",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              },
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "# Filename: astra_assessment_state_manager_tool.py (V1.1 - Fixed Caching Logic)\nimport os\nfrom typing import Optional, List, Dict, Any, ClassVar\n\nfrom langflow.base.langchain_utilities.model import LCToolComponent\nfrom langchain_core.tools import BaseTool, StructuredTool, Tool\nfrom langchain.pydantic_v1 import BaseModel, Field\nfrom langflow.io import StrInput, SecretStrInput, HandleInput # Use appropriate inputs\nfrom langflow.logging import logger # Use langflow logger\n\n# Astra DB specific imports\nfrom astrapy import Collection, DataAPIClient, Database\nfrom astrapy.admin import parse_api_endpoint\nimport logging # Standard logging\nimport traceback\n\n# --- Logging Configuration ---\nlogging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')\nastra_logger = logging.getLogger(\"AstraDBAssessmentStateManager\")\n\n# --- Constants ---\nDEFAULT_JOB_QUESTIONS = [\"Default Q1?\", \"Default Q2?\", \"Default Q3?\"]\nCOMPLETION_SIGNAL = \"[ASSESSMENT_COMPLETE]\"\nASTRA_ID_FIELD = \"_id\"\n\n# --- Pydantic Input Schema ---\nclass AstraDBAssessmentToolInputSchema(BaseModel):\n    \"\"\"Input schema for the Astra DB Assessment State Manager Tool.\"\"\"\n    session_id_input: str = Field(..., description=\"Unique identifier for the session. This will be the document ID.\")\n    action: str = Field(..., description=\"Action: 'INITIALIZE_WITH_QUESTIONS', 'GET_CURRENT_QUESTION', 'RECORD_ANSWER_AND_GET_NEXT'\")\n    answer_payload: Optional[str] = Field(None, description=\"User's answer text (required for RECORD_ANSWER_AND_GET_NEXT).\")\n    questions_payload: Optional[List[str]] = Field(None, description=\"List of questions (required for INITIALIZE_WITH_QUESTIONS).\")\n\n# --- Main Tool Component ---\nclass AstraDBAssessmentStateManagerTool(LCToolComponent):\n    display_name = \"Astra DB Assessment State Manager\"\n    description = \"Manages assessment state using an Astra DB collection for persistence.\"\n    icon = \"AstraDB\"\n    name = \"AstraDBAssessmentStateManagerTool\"\n    beta: bool = True\n\n    inputs = [\n        StrInput(\n            name=\"keyspace\",\n            display_name=\"Keyspace Name\",\n            info=\"The name of the keyspace within Astra where the state collection exists.\",\n            value=\"default_keyspace\",\n            advanced=False,\n        ),\n        StrInput(\n            name=\"collection_name\",\n            display_name=\"State Collection Name\",\n            info=\"The name of the collection within Astra DB where assessment state will be stored.\",\n            value=\"assessment_state\",\n            required=True,\n        ),\n        SecretStrInput(\n            name=\"token\",\n            display_name=\"Astra DB Application Token\",\n            info=\"Authentication token for accessing Astra DB.\",\n            value=\"ASTRA_DB_APPLICATION_TOKEN\",\n            required=True,\n        ),\n        SecretStrInput(\n            name=\"api_endpoint\",\n            display_name=\"API Endpoint / Database ID\",\n            info=\"API endpoint URL or Database ID for the Astra DB service.\",\n            value=\"ASTRA_DB_API_ENDPOINT\",\n            required=True,\n        ),\n    ]\n\n    # Astra DB Client Caching\n    _cached_collection: Collection | None = None\n    # Store the parameters used for the cached collection\n    _cached_token_val: str | None = None\n    _cached_api_endpoint_val: str | None = None\n    _cached_keyspace_val: str | None = None\n    _cached_collection_name_val: str | None = None\n\n\n    def _build_collection(self) -> Collection: # Added return type hint\n        \"\"\"Builds and caches the Astra DB Collection object.\"\"\"\n        # Ensure token and endpoint values are unwrapped correctly for comparison/use\n        current_token_val = self.token if isinstance(self.token, str) else self.token.get_secret_value()\n        current_api_endpoint_val = self.api_endpoint if isinstance(self.api_endpoint, str) else self.api_endpoint.get_secret_value()\n\n        # Check cache first using cached parameters\n        if (self._cached_collection is not None and\n            self._cached_token_val == current_token_val and\n            self._cached_api_endpoint_val == current_api_endpoint_val and\n            self._cached_keyspace_val == self.keyspace and\n            self._cached_collection_name_val == self.collection_name):\n             astra_logger.debug(\"Using cached Astra DB collection object.\")\n             return self._cached_collection\n\n        # Cache is invalid or doesn't exist, build new connection\n        astra_logger.debug(f\"Building Astra DB collection object for endpoint: {current_api_endpoint_val}, keyspace: {self.keyspace}, collection: {self.collection_name}\")\n        try:\n            environment = parse_api_endpoint(current_api_endpoint_val).environment\n\n            # Initialize client and database\n            # Use the unwrapped token value\n            client = DataAPIClient(current_token_val, environment=environment)\n            db = client.get_database(current_api_endpoint_val, keyspace=self.keyspace)\n            collection = db.get_collection(self.collection_name)\n\n            astra_logger.info(f\"Successfully connected to Astra DB Collection: {self.collection_name}\")\n\n            # Update cache only on successful connection\n            self._cached_collection = collection\n            self._cached_token_val = current_token_val\n            self._cached_api_endpoint_val = current_api_endpoint_val\n            self._cached_keyspace_val = self.keyspace\n            self._cached_collection_name_val = self.collection_name\n\n            return self._cached_collection\n        except Exception as e:\n            # Clear cache on error\n            self._cached_collection = None\n            self._cached_token_val = None\n            self._cached_api_endpoint_val = None\n            self._cached_keyspace_val = None\n            self._cached_collection_name_val = None\n            astra_logger.error(f\"Error building Astra DB collection: {e}\", exc_info=True)\n            raise ValueError(f\"Error connecting to Astra DB: {e}\") from e\n\n    # --- State Helper Methods (Astra DB Implementation - unchanged) ---\n    def _get_session_state(self, session_id: str) -> Optional[Dict[str, Any]]:\n        \"\"\"Retrieves the state document for a given session_id from Astra DB.\"\"\"\n        if not session_id: astra_logger.error(\"Attempted to get state with empty session_id.\"); return None\n        try:\n            collection = self._build_collection()\n            astra_logger.debug(f\"Attempting to find state for session_id (document _id): {session_id}\")\n            state_doc = collection.find_one({\"_id\": session_id})\n            if state_doc:\n                astra_logger.debug(f\"Found state for session {session_id}: {state_doc}\")\n                state_doc.setdefault(\"current_question_index\", 0)\n                state_doc.setdefault(\"collected_answers\", {})\n                state_doc.setdefault(\"assessment_complete\", False)\n                state_doc.setdefault(\"job_questions\", DEFAULT_JOB_QUESTIONS)\n                return state_doc\n            else: astra_logger.debug(f\"No state found for session {session_id}.\"); return None\n        except Exception as e: astra_logger.error(f\"Error getting state for session {session_id} from Astra DB: {e}\", exc_info=True); return None\n\n    def _create_or_update_session_state(self, session_id: str, state_data: Dict[str, Any]) -> bool:\n        \"\"\"Creates or replaces the state document for a session_id in Astra DB.\"\"\"\n        if not session_id: astra_logger.error(\"Attempted to update state with empty session_id.\"); return False\n        try:\n            collection = self._build_collection()\n            document_to_save = {**state_data, \"_id\": session_id}\n            astra_logger.debug(f\"Attempting to save state for session {session_id}: {document_to_save}\")\n            result = collection.find_one_and_replace( filter={\"_id\": session_id}, replacement=document_to_save, upsert=True )\n            astra_logger.info(f\"Successfully saved state for session {session_id}. Upsert result: {result}\")\n            return True\n        except Exception as e: astra_logger.error(f\"Error saving state for session {session_id} to Astra DB: {e}\", exc_info=True); return False\n\n    # --- Tool Execution Logic (Instance Method - unchanged) ---\n    def _execute_state_action( self, session_id_input: str, action: str, answer_payload: Optional[str] = None, questions_payload: Optional[List[str]] = None ) -> str:\n        session_id = session_id_input\n        astra_logger.info(f\"Tool Execute START | Session: {session_id} | Action: {action}\")\n        astra_logger.debug(f\"Session {session_id}: Action='{action}', Answer Payload='{answer_payload}', Questions Payload Provided={'Yes' if questions_payload else 'No'}\")\n\n        if not session_id: astra_logger.error(\"Tool received empty session_id_input.\"); return \"Error: Session ID was empty.\"\n\n        try:\n            # ACTION: INITIALIZE\n            if action == \"INITIALIZE_WITH_QUESTIONS\":\n                if questions_payload is None: astra_logger.error(f\"Session {session_id}: INITIALIZE called without questions_payload.\"); return \"Error: questions_payload missing.\"\n                if not isinstance(questions_payload, list): astra_logger.error(f\"Session {session_id}: questions_payload was not a list.\"); return \"Error: questions_payload must be a list of strings.\"\n                initial_state = { \"current_question_index\": 0, \"collected_answers\": {}, \"assessment_complete\": False, \"job_questions\": questions_payload or DEFAULT_JOB_QUESTIONS }\n                astra_logger.info(f\"Session {session_id}: Initializing/Resetting state with {len(initial_state['job_questions'])} questions.\")\n                astra_logger.debug(f\"Session {session_id}: Initial state details: {initial_state}\")\n                if self._create_or_update_session_state(session_id, initial_state):\n                    first_question = initial_state[\"job_questions\"][0] if initial_state[\"job_questions\"] else None\n                    if first_question: astra_logger.info(f\"Session {session_id}: Initialization successful. Returning first question.\"); return first_question\n                    else: astra_logger.error(f\"Session {session_id}: Initialization done but question list is empty.\"); return \"Error: Initialized empty list.\"\n                else: astra_logger.error(f\"Session {session_id}: Failed to save initial state to Astra DB.\"); return \"Error: Failed save state after init.\"\n\n            current_state = self._get_session_state(session_id)\n            if current_state is None and action != \"INITIALIZE_WITH_QUESTIONS\": astra_logger.error(f\"Session {session_id}: State not found for action '{action}'. Please initialize first.\"); return f\"Error: Session state not found for {session_id}. Please start over or initialize.\"\n\n            # ACTION: GET CURRENT QUESTION\n            elif action == \"GET_CURRENT_QUESTION\":\n                if current_state[\"assessment_complete\"]: astra_logger.info(f\"Session {session_id}: GET_CURRENT called, assessment already complete. Returning signal.\"); return COMPLETION_SIGNAL\n                idx = current_state[\"current_question_index\"]; questions = current_state[\"job_questions\"]\n                if not isinstance(questions, list) or not questions: astra_logger.error(f\"Session {session_id}: Invalid questions list in retrieved state: {questions}\"); return \"Error: Questions invalid state.\"\n                if idx < len(questions): astra_logger.info(f\"Session {session_id}: Returning current question index {idx}.\"); return questions[idx]\n                else: astra_logger.warning(f\"Session {session_id}: Index {idx} out of bounds ({len(questions)} questions), marking complete now.\"); current_state[\"assessment_complete\"] = True; self._create_or_update_session_state(session_id, current_state); return COMPLETION_SIGNAL\n\n            # ACTION: RECORD_ANSWER_AND_GET_NEXT\n            elif action == \"RECORD_ANSWER_AND_GET_NEXT\":\n                if answer_payload is None: astra_logger.error(f\"Session {session_id}: RECORD_ANSWER called without answer_payload.\"); return \"Error: answer_payload missing.\"\n                if current_state[\"assessment_complete\"]: astra_logger.info(f\"Session {session_id}: RECORD_ANSWER called, assessment already complete. Returning signal.\"); return COMPLETION_SIGNAL\n                idx = current_state[\"current_question_index\"]; questions = current_state[\"job_questions\"]\n                if not isinstance(questions, list) or not questions: astra_logger.error(f\"Session {session_id}: Invalid questions list in state during RECORD_ANSWER: {questions}\"); return \"Error: Questions invalid state.\"\n                astra_logger.info(f\"Session {session_id}: Recording answer '{answer_payload}' for question index {idx}.\"); astra_logger.debug(f\"Session {session_id}: State BEFORE record attempt: {current_state}\")\n                if idx < len(questions):\n                    current_state[\"collected_answers\"][str(idx)] = answer_payload; next_idx = idx + 1; current_state[\"current_question_index\"] = next_idx\n                    result_signal = \"\";\n                    if next_idx >= len(questions): current_state[\"assessment_complete\"] = True; astra_logger.info(f\"Session {session_id}: Assessment marked complete after recording final answer (idx {idx}).\"); result_signal = COMPLETION_SIGNAL\n                    else: result_signal = questions[next_idx]; astra_logger.info(f\"Session {session_id}: Recorded answer for Q{idx}, next index is {next_idx}. Returning next question.\")\n                    astra_logger.debug(f\"Session {session_id}: State BEFORE final save attempt: {current_state}\")\n                    save_success = self._create_or_update_session_state(session_id, current_state)\n                    astra_logger.info(f\"Session {session_id}: State save attempt result after recording answer: {save_success}\")\n                    if not save_success: astra_logger.error(f\"Session {session_id}: CRITICAL - Failed to save state update to Astra DB after recording answer for index {idx}.\"); return \"Error: Failed save state after record.\"\n                    astra_logger.info(f\"Session {session_id}: Successfully saved state. Returning signal: {result_signal}\"); return result_signal\n                else: astra_logger.warning(f\"Session {session_id}: RECORD_ANSWER called when index ({idx}) was already >= question count ({len(questions)}). Marking complete.\"); current_state[\"assessment_complete\"] = True; self._create_or_update_session_state(session_id, current_state); return COMPLETION_SIGNAL\n            else: astra_logger.error(f\"Session {session_id}: Unknown action received: '{action}'.\"); return f\"Error: Unknown action '{action}'.\"\n\n        except Exception as e: astra_logger.error(f\"Tool Exception | Session: {session_id} | Action: {action} | Error: {e}\", exc_info=True); return f\"Error: Internal tool error. Details: {e}\"\n        finally: astra_logger.info(f\"Tool Execute END | Session: {session_id} | Action: {action}\")\n\n    # --- Build Tool Method (unchanged) ---\n    def build_tool(self) -> Tool:\n        tool_name = \"manage_assessment_state_astra_v1\"\n        astra_logger.info(f\"Attempting to build {self.display_name} as tool '{tool_name}'...\")\n        try:\n            self._build_collection() # Ensure connection works before returning tool\n            assessment_tool = StructuredTool.from_function( name=tool_name, func=self._execute_state_action, args_schema=AstraDBAssessmentToolInputSchema, description=\"Manages assessment state using Astra DB. Actions: INITIALIZE_WITH_QUESTIONS, GET_CURRENT_QUESTION, RECORD_ANSWER_AND_GET_NEXT.\", )\n            self.status = f\"{self.display_name} built successfully as '{tool_name}'.\"\n            astra_logger.info(self.status)\n            return assessment_tool\n        except Exception as e:\n            astra_logger.error(f\"CRITICAL ERROR in build_tool for {self.display_name}: {e}\", exc_info=True)\n            error_tool = Tool( name=f\"build_error_{tool_name}\", func=lambda x: f\"Error building Astra DB state tool: {e}\", description=\"Tool failed to build due to Astra DB connection or setup issues.\" )\n            self.status = f\"Error building {self.display_name}: {e}\"; return error_tool\n"
+              },
+              "collection_name": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "State Collection Name",
+                "dynamic": false,
+                "info": "The name of the collection within Astra DB where assessment state will be stored.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "collection_name",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "assessment_state"
+              },
+              "keyspace": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "Keyspace Name",
+                "dynamic": false,
+                "info": "The name of the keyspace within Astra where the state collection exists.",
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "name": "keyspace",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "default_keyspace"
+              },
+              "token": {
+                "_input_type": "SecretStrInput",
+                "advanced": false,
+                "display_name": "Astra DB Application Token",
+                "dynamic": false,
+                "info": "Authentication token for accessing Astra DB.",
+                "input_types": [],
+                "load_from_db": true,
+                "name": "token",
+                "password": true,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "AstraDBAssessmentStateManagerTool"
+        },
+        "id": "AstraDBAssessmentStateManagerTool-zioT6",
+        "measured": {
+          "height": 543,
+          "width": 320
+        },
+        "position": {
+          "x": -1368.1388992892564,
+          "y": -69.96739699498127
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1
+    }
+  },
+  "description": "Nurture NLP Nodes Here.",
+  "endpoint_name": null,
+  "id": "3cc6edb3-12fc-4912-a7a6-07714beba4b4",
+  "is_component": false,
+  "last_tested_version": "1.3.4",
+  "name": "resty job assessment",
+  "tags": []
+}
