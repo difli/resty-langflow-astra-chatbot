@@ -187,7 +187,3 @@ The key to handling the conversation flow correctly across multiple turns, espec
 *   **Deployment:** Containerize the Streamlit app and deploy both Langflow and the app to a cloud platform for wider access.
 *   **Multi-language Support:** Adapt prompts and data for different languages.
 *   **Adaptive Questioning:** Modify the logic to ask follow-up questions based on previous answers.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
