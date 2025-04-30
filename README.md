@@ -111,7 +111,7 @@ ASTRA_DB_COLLECTION_NAME="your_state_collection"
     #     environment:
     #       # ... env vars for credentials ...
     ```
-*   **Install Dependencies:** Ensure `astrapy` is installed *within* the Langflow Docker container environment (e.g., by customizing the Dockerfile or exec-ing into the running container and running `pip install astrapy`).
+*   **Install Dependencies:** The necessary Python packages (`astrapy`) for the custom component are typically managed by the Langflow environment when running the flow.
 *   **Access Langflow:** Open your browser to `http://localhost:7860` (or the configured port).
 
 **6. Import and Configure Langflow Flow:**
@@ -152,10 +152,27 @@ ASTRA_DB_COLLECTION_NAME="your_state_collection"
 
 The key to handling the conversation flow correctly across multiple turns, especially when interruptions like clarification questions occur, is the state management performed by the `AstraDBAssessmentStateManagerTool` component:
 
-1.  **Initialization:** When the chat starts, the `INITIALIZE_WITH_QUESTIONS` action is called. This creates a new document in the specified Astra DB collection (`assessment_state` by default). The document's `_id` is the unique `session_id` for the chat. This document stores the list of `job_questions`, sets `current_question_index` to 0, `collected_answers` to empty, and `assessment_complete` to `false`.
+1.  **Initialization:** When the chat starts, the `INITIALIZE_WITH_QUESTIONS` action is called. This creates/updates a document in the specified Astra DB collection (`assessment_state` by default). The document's `_id` is the unique `session_id` for the chat.
 2.  **Recording Answers:** When the user provides a valid answer to an assessment question, the `RECORD_ANSWER_AND_GET_NEXT` action is called. The tool retrieves the current state document from Astra DB, adds the answer to the `collected_answers` map (keyed by the index), increments the `current_question_index`, checks if the assessment is now complete, and saves the *entire updated state document* back to Astra DB, replacing the previous version. It returns the next question text or the `[ASSESSMENT_COMPLETE]` signal.
 3.  **Getting Current Question:** When the user asks a clarification or irrelevant question, the `GET_CURRENT_QUESTION` action is called. The tool retrieves the current state document from Astra DB and returns the text of the question at the `current_question_index` *without modifying the state*. This allows the Agent to re-ask the correct pending question.
-4.  **Persistence:** By storing this state in Astra DB, the application becomes stateless itself. Each request is handled based on the persistent state retrieved for that specific session.
+4.  **Persistence & Data Structure:** By storing this state in Astra DB, the application becomes stateless itself. Each request is handled based on the persistent state retrieved for that specific session. A completed assessment state document in Astra DB looks like this:
+    ```json
+    {
+      "_id": "app_session_ca447b91-8ce2-4ad2-a45d-8c46eb6979d8",
+      "current_question_index": 3,
+      "collected_answers": {
+        "0": "yes",
+        "1": "yes",
+        "2": "yes"
+      },
+      "assessment_complete": true,
+      "job_questions": [
+        "Do you have specific experience working with wood-fired pizza ovens?",
+        "Are you comfortable managing the entire pizza-making process independently, including dough preparation?",
+        "Are you available to work the required evening shifts (6 PM - 12 AM) from Tuesday to Sunday?"
+      ]
+    }
+    ```
 
 ## Considerations & Future Enhancements
 
